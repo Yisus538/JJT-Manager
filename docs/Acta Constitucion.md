@@ -144,7 +144,7 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
 **Restricciones:** \-Equipo fijo de 3 personas sin posibilidad de incorporar recursos adicionales. \- Uso obligatorio de certificados de testing de ARCA para desarrollo; credenciales reales solo para validación final opcional.
 
-**Supuestos:** \- ARCA mantiene disponible y estable su ambiente de homologación durante el desarrollo. \- El equipo cuenta con acceso a una CUIT de prueba habilitada para generar certificados de testing. \- La cátedra evalúa tanto el producto de software como el proceso de gestión aplicado.
+**Supuestos:** \- ARCA mantiene disponible y estable su ambiente de homologación durante el desarrollo. \- El equipo cuenta con acceso a una CUIT de prueba habilitada para generar certificados de testing. \- El sponsor evalúa tanto el producto de software como el proceso de gestión aplicado.
 
 11. ### **Autoridad del Director de Proyecto**
 

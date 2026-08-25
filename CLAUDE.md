@@ -1,6 +1,6 @@
 # JJT Manager — Sistema de Gestión y Facturación Ágil integrado con ARCA
 
-Monorepo del proyecto de la materia Gestión de Proyectos Informáticos. Ver `docs/Acta Constitucion.md` para el detalle completo del proyecto.
+Monorepo del proyecto, desarrollado para un sponsor. Ver `docs/Acta Constitucion.md` para el detalle completo del proyecto.
 
 ## Equipo y ownership de carpetas
 
