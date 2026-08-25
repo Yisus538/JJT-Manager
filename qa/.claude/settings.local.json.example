@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "../frontend",
+      "../backend"
+    ],
+    "allow": [
+      "Read(../frontend/**)",
+      "Edit(../frontend/**)",
+      "Write(../frontend/**)",
+      "Read(../backend/**)",
+      "Edit(../backend/**)",
+      "Write(../backend/**)"
+    ]
+  }
+}

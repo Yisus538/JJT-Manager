@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(frontend/**)",
+      "Write(frontend/**)",
+      "Edit(../frontend/**)",
+      "Write(../frontend/**)",
+      "Edit(qa/**)",
+      "Write(qa/**)",
+      "Edit(../qa/**)",
+      "Write(../qa/**)"
+    ]
+  }
+}

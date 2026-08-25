@@ -1,0 +1,9 @@
+# JJT Manager — ownership por carpeta
+# Ver CLAUDE.md para el detalle de las reglas de cada rol.
+
+/frontend/  @JuanCruzBul
+/backend/   @termocapocha
+/qa/        @Yisus538
+
+# docs es compartida: cualquiera de los tres puede aprobar cambios ahí
+/docs/      @Yisus538 @JuanCruzBul @termocapocha
