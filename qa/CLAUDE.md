@@ -28,4 +28,9 @@ QA/QC es quien más deuda técnica va a detectar (por su acceso cruzado a fronte
 - **Deuda grande o arquitectónica** (rediseño de un módulo, cambio de estructura de datos, cambio que afecta varios archivos o el contrato entre frontend y backend): QA/QC **la registra** (en `qa/`, con severidad e impacto) y **la asigna de vuelta** al dueño de esa carpeta — quien conoce mejor esa parte del sistema decide el cómo. Tomás Disandro (Director de Proyecto) prioriza cuándo se aborda frente al resto del backlog.
 - En ambos casos, QA/QC mantiene su rol de validación: si otro integrante resuelve la deuda, QA/QC verifica el resultado de forma independiente antes de darla por cerrada.
 
-El registro vive en `qa/TECH_DEBT.md` (ítems abiertos, por severidad) y `qa/TECH_DEBT_RESUELTO.md` (histórico de cerrados). Todo ítem nuevo, resuelto, o creado a raíz de verificar otro (patrón común: verificar un fix destapa un bug distinto) se anota ahí, con su `TD-XXX` y el changelog en el encabezado del archivo.
+El registro está repartido por severidad, no todo en un solo archivo:
+
+- **Baja** (la que QA/QC resuelve directo): `qa/TECH_DEBT.md` / `qa/TECH_DEBT_RESUELTO.md`.
+- **Media y Alta** (la que se asigna al dueño del módulo): `frontend/docs/TECH_DEBT.md` o `backend/docs/TECH_DEBT.md`, según dónde esté el archivo afectado — QA/QC la registra ahí, no en `qa/`, y el dueño de esa carpeta se hace cargo del fix.
+
+Todo ítem nuevo, resuelto, o creado a raíz de verificar otro (patrón común: verificar un fix destapa un bug distinto) se anota con su `TD-XXX` y se refleja en el changelog del encabezado del archivo correspondiente.
