@@ -10,15 +10,24 @@ Nombre corto del proyecto	**JJT Manager**
 
 Patrocinador (Sponsor)	**Julio Gutierrez**
 
-Director de proyecto	**Tomas Disandro**
+Director de proyecto	**Tomás Disandro**
 
-Fecha	**25/08/2026**
+Código del documento	**JJT-GPI-02**
+
+Fecha	**25/08/2026** (versión 1.1: 06/10/2026)
 
 ## **Registro de Interesados (Stakeholder Register)**
 
 **Proyecto:** Sistema de Gestión y Facturación Ágil integrado con ARCA (JJT Manager)
 
-**Fecha:** 25/08/2026 
+**Fecha:** 25/08/2026
+
+**Versión del documento:** 1.1 (06/10/2026)
+
+| Versión | Fecha | Cambios |
+| :---- | :---- | :---- |
+| 1.0 | 25/08/2026 | Emisión inicial (la actividad 1.2 estaba planificada en la semana 1; se emitió en la semana 2). |
+| 1.1 | 06/10/2026 | Se aclara en la matriz visual la ubicación de STK-03 y STK-04 (poder medio, en el límite A/C). STK-07 (Railway) pasa a citar también la sección «Interesados (Stakeholders) principales» del Acta v1.2, donde ahora figura. Se unifica la grafía «Tomás». Clasificación y estrategias: sin cambios. |
 
 1. ### **Metodología de clasificación**
 
@@ -49,7 +58,7 @@ Cada interesado se documenta con una ficha Campo/Detalle, en el mismo formato us
 | **Estrategia** | Gestionar de cerca |
 | **Fuente (trazabilidad)** | Acta "Datos generales" (Patrocinador); "Interesados (Stakeholders) principales"; "Aprobación" |
 
-#### **STK-02 — Tomas Disandro**
+#### **STK-02 — Tomás Disandro**
 
 | Rol / Interés | Director de Proyecto y Backend. Autoridad para asignar tareas, priorizar backlog, proponer cambios de alcance y representar al equipo ante el sponsor. |
 | :---- | :---- |
@@ -107,14 +116,16 @@ Cada interesado se documenta con una ficha Campo/Detalle, en el mismo formato us
 | **Interés** | Bajo |
 | **Cuadrante** | D |
 | **Estrategia** | Monitorear |
-| **Fuente (trazabilidad)** | Acta "Presupuesto de alto nivel" (Costos de Infraestructura: Railway, 5 USD/mes) |
+| **Fuente (trazabilidad)** | Acta "Presupuesto de alto nivel" (Costos de Infraestructura: Railway, 5 USD/mes); "Interesados (Stakeholders) principales" (Acta v1.2) |
 
 3. ### **Matriz Poder/Interés (visual)**
 
 | Poder \\ Interés | Bajo | Alto |
 | :---- | :---- | :---- |
-| **Alto** | STK-06 (ARCA) | STK-01 (Sponsor), STK-02 (Director), STK-03 (Frontend), STK-04 (QA/QC) |
+| **Alto** | STK-06 (ARCA) | STK-01 (Sponsor), STK-02 (Director), STK-03 (Frontend)*, STK-04 (QA/QC)* |
 | **Bajo** | STK-07 (Railway) | STK-05 (Comerciante genérico) |
+
+\* STK-03 y STK-04 tienen poder **medio** (ver sus fichas); en esta matriz de dos niveles se ubican en la fila «Alto» por estar en el límite entre los cuadrantes A y C (ver nota de trazabilidad).
 
 4. ### **Notas de trazabilidad y decisiones de alcance de este registro**
 

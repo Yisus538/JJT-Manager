@@ -10,15 +10,24 @@ Nombre corto del proyecto	**JJT Manager**
 
 Patrocinador (Sponsor)	**Julio Gutierrez**
 
-Director de proyecto	**Tomas Disandro**
+Director de proyecto	**Tomás Disandro**
 
-Fecha	**25/08/2026**
+Código del documento	**JJT-GPI-04**
+
+Fecha	**25/08/2026** (versión 1.1: 06/10/2026)
 
 ## **Documento de Alcance y Gestión GPI**
 
 **Proyecto:** Sistema de Gestión y Facturación Ágil integrado con ARCA (JJT Manager)
 
 **Fecha:** 25/08/2026
+
+**Versión del documento:** 1.1 (06/10/2026)
+
+| Versión | Fecha | Cambios |
+| :---- | :---- | :---- |
+| 1.0 | 25/08/2026 | Emisión inicial. |
+| 1.1 | 06/10/2026 | Se define la metodología de sprints (§3.1) y se agregan las fechas de los hitos (§3). La EDT embebida se alinea con `docs/EDT.md` v1.1: RF-28 en 8.1/8.2, RNF-04/05/09 en 4.4/4.6 y las 8 actividades de QA por módulo. El equipo (§4) refleja la participación transversal de QA en la Lista de Actividades v1.1. El H3 incluye Usuarios y permisos. Se corrigen errores de redacción. Alcance incluido/excluido: **sin cambios**. |
 
 > Este documento desarrolla el **alcance de alto nivel** del Acta de Constitución en una Declaración de Alcance, una Estructura de Desglose del Trabajo (EDT), un cronograma de hitos y sprints, y el **proceso formal de control de cambios** (sección 7) al que debe someterse cualquier pedido que exceda lo aquí definido. Cada apartado cita la sección del Acta o del Documento de Requerimientos de la que se deriva.
 
@@ -49,42 +58,47 @@ Fecha	**25/08/2026**
 
 2. ### **Estructura de Desglose del Trabajo (EDT)**
 
-La EDT organiza el trabajo en 4 fases, alineadas a los hitos de alto nivel del Acta (H1-H4) y ordenadas siguiendo la prioridad de módulos: Productos/Stock → Facturación/ARCA → Clientes/CtaCte → Pagos/Giftcards → Reportes.
+La EDT organiza el trabajo en 9 paquetes, asignados a las 4 fases definidas por los hitos del Acta (H1-H4) y ordenados siguiendo la prioridad de módulos: Productos/Stock → Facturación/ARCA → Clientes/CtaCte → Pagos/Giftcards → Reportes. Este apartado resume los paquetes y sus actividades; el desglose completo (incluidos los subniveles 4.1.1–4.1.3 y 6.1.1–6.1.3) está en `docs/EDT.md` (JJT-GPI-05), que es la versión de referencia.
 
 #### **1.0 Gestión del Proyecto**
 
-* 1.1 Acta de Constitución
+* 1.1 Acta de Constitución (RNF-10)
 * 1.2 Registro de Interesados
 * 1.3 Documento de Requerimientos
-* 1.4 Documento de Alcance y Gestión (este documento)
+* 1.4 Documento de Alcance y Gestión (este documento; RNF-08)
+* 1.5 Revisión de pares de los documentos de gestión (QA)
 
 #### **2.0 Diseño y Arquitectura**
 
 * 2.1 Definición de stack tecnológico
 * 2.2 Modelo de datos genérico multirubro (RNF-01 a RNF-03)
 * 2.3 Spike técnico de homologación con Web Services de ARCA (mitigación de riesgo, Acta y Riesgos)
+* 2.4 Revisión del modelo de datos contra 2 rubros (QA; RF-32, RNF-01 a RNF-03)
 
 #### **3.0 Módulo Productos y Stock**
 
 * 3.1 Alta/baja/modificación de productos (RF-01)
-* 3.2 Categorías y variantes configurables (RF-02, RF-03)
+* 3.2 Categorías y variantes configurables (RF-02, RF-03, RNF-02)
 * 3.3 Control de inventario y ajustes de stock (RF-04)
 * 3.4 Alertas de stock mínimo (RF-05)
+* 3.5 Pruebas funcionales de Productos y Stock (QA; RF-01 a RF-05)
 
 #### **4.0 Módulo Facturación (ARCA)**
 
 * 4.1 Integración WSAA/WSFEv1 — ambiente de homologación (RF-06, RF-08)
 * 4.2 Emisión de Factura A/B/C (RF-06)
 * 4.3 Notas de Crédito/Débito (RF-07)
-* 4.4 Manejo de errores de WS y logging seguro (RF-09, RF-10, RNF-04, RNF-05)
+* 4.4 Manejo de errores de WS y logging seguro (RF-09, RF-10, RNF-05)
 * 4.5 Exportación de comprobantes en PDF (RF-11)
-* 4.6 Habilitación de credenciales de producción configurables (RF-08)
+* 4.6 Habilitación de credenciales de producción configurables (RF-08, RNF-04, RNF-09)
+* 4.7 Pruebas de integración contra homologación ARCA (QA; RF-06 a RF-11, RNF-04, RNF-05, RNF-09)
 
 #### **5.0 Módulo Clientes/Proveedores y Cuentas Corrientes**
 
 * 5.1 ABM de clientes y proveedores con datos fiscales (RF-12)
 * 5.2 Cuentas corrientes: saldo, movimientos, límite de crédito (RF-13)
 * 5.3 Consulta de estado de cuenta (RF-14)
+* 5.4 Pruebas funcionales de Clientes/Proveedores (QA; RF-12 a RF-14)
 
 #### **6.0 Módulo Pagos y Giftcards**
 
@@ -92,6 +106,7 @@ La EDT organiza el trabajo en 4 fases, alineadas a los hitos de alto nivel del A
 * 6.2 Pago combinado / mixto (RF-16)
 * 6.3 Giftcards: emisión, recarga, canje, consulta de saldo (RF-17 a RF-20)
 * 6.4 Integración con pasarela simulada/sandbox (RF-21)
+* 6.5 Pruebas funcionales de Pagos y Giftcards (QA; RF-15 a RF-21)
 
 #### **7.0 Módulo Reportes y Estadísticas**
 
@@ -101,39 +116,45 @@ La EDT organiza el trabajo en 4 fases, alineadas a los hitos de alto nivel del A
 * 7.4 Reporte de cuentas corrientes (RF-25)
 * 7.5 Reporte de rentabilidad (RF-26)
 * 7.6 Exportación de reportes (RF-27)
+* 7.7 Pruebas funcionales de Reportes (QA; RF-22 a RF-27)
 
 #### **8.0 Módulo Usuarios y Permisos**
 
-* 8.1 Rol administrador (RF-29)
-* 8.2 Rol cajero (RF-30)
+* 8.1 Rol administrador (RF-28, RF-29)
+* 8.2 Rol cajero (RF-28, RF-30)
+* 8.3 Pruebas de permisos por rol (QA; RF-28 a RF-30)
 
 #### **9.0 Pruebas, Integración y Cierre**
 
-* 9.1 Prueba de ciclo integral: alta de producto → venta → facturación → pago → reportes (RF-31)
+* 9.1 Prueba de ciclo integral: alta de producto → venta → facturación → pago → reportes (RF-31, RNF-06)
 * 9.2 Validación de genericidad en ≥2 rubros (RF-32)
-* 9.3 Validación final contra ambiente de homologación de ARCA (Acta y Criterios de éxito)
-* 9.4 Entrega final y documentación de cierre
+* 9.3 Validación final contra ambiente de homologación de ARCA (Acta y Criterios de éxito; CE-1)
+* 9.4 Entrega final y documentación de cierre (RNF-07, RNF-08, RNF-10)
 
 3. ### **Cronograma de hitos**
 
-| Hito  | Descripción | Semana estimada | EDT asociada |
-| :---- | :---- | :---- | :---- |
-| **H1** | Planificación, arquitectura y diseño | Semanas 1-6 | 1.0, 2.0 |
-| **H2** | Desarrollo del sistema central (Stock y Facturación ARCA) | Semanas 7-15 | 3.0, 4.0 |
-| **H3** | Desarrollo de módulos complementarios (Clientes, Pagos y Reportes) | Semanas 16-23 | 5.0, 6.0, 7.0, 8.0 |
-| **H4** | Pruebas, integración y entrega final | Semanas 24-27 | 9.0 |
+| Hito  | Descripción | Semana estimada | Fechas | EDT asociada |
+| :---- | :---- | :---- | :---- | :---- |
+| **H1** | Planificación, arquitectura y diseño | Semanas 1-6 | 19/08/2026 – 27/09/2026 | 1.0, 2.0 |
+| **H2** | Desarrollo del sistema central (Stock y Facturación ARCA) | Semanas 7-15 | 28/09/2026 – 29/11/2026 | 3.0, 4.0 |
+| **H3** | Desarrollo de módulos complementarios (Clientes, Pagos, Reportes y Usuarios) | Semanas 16-23 | 30/11/2026 – 24/01/2027 | 5.0, 6.0, 7.0, 8.0 |
+| **H4** | Pruebas, integración y entrega final | Semanas 24-27 | 25/01/2027 – 21/02/2027 | 9.0 |
+
+La semana 1 es la que comienza el lunes 17/08/2026 (el proyecto inicia el miércoles 19/08/2026); el calendario detallado por actividad está en el Cronograma (JJT-GPI-07).
 
    1. #### **Metodología de gestión**
 
 El proyecto sigue una metodología **híbrida**: fases predictivas para planificación y documentación de gestión (H1), y desarrollo iterativo por sprints, cerrando con una fase predictiva de estabilización y entrega (H4).
 
+Los **sprints duran 2 semanas** y se ejecutan en H2 y H3 (semanas 7 a 23): cuatro sprints en H2 (S1 a S4; el último dura 3 semanas para cerrar junto con el hito) y cuatro en H3 (S5 a S8). Cada sprint cierra con una revisión y demostración al equipo, y el Director de Proyecto prioriza el backlog junto con el equipo (Acta, «Autoridad del Director de Proyecto»). Las fechas de cada sprint están en el Cronograma §2. Los sprints no modifican los hitos ni el alcance: ordenan la ejecución dentro de ellos.
+
 4. ### **Equipo y responsabilidades**
 
 | Integrante | Rol | Frentes EDT bajo su responsabilidad principal |
 | :---- | :---- | :---- |
-| Tomas Disandro | Director de Proyecto / Backend | 1.0, 2.0, 4.0, 5.0 |
+| Tomás Disandro | Director de Proyecto / Backend | 1.0, 2.0, 4.0, 5.0 |
 | Juan Cruz Bulatovich | Frontend | 3.0, 6.0, 7.0, 8.0 (interfaces) |
-| Jesus Manuel Martinez | QA y QC | 9.0 (pruebas e integración, transversal a todos los módulos) |
+| Jesus Manuel Martinez | QA y QC | 9.0 (pruebas e integración) y actividades de QA de cada módulo: 1.5, 2.4, 3.5, 4.7, 5.4, 6.5, 7.7 y 8.3 (transversal a todos los módulos) |
 
 5. ### **Riesgos de alto nivel**
 
@@ -148,7 +169,7 @@ El proyecto sigue una metodología **híbrida**: fases predictivas para planific
 
       * El sistema emite facturas electrónicas válidas contra el ambiente de homologación de ARCA (CAE obtenido correctamente). *(RF-06, RF-08, RF-09)*
 
-      * El sistema permite operar el ciclo completo: alta de producto → venta con control de stock → facturación → registro de pago → impactó en reportes. *(RF-31)*
+      * El sistema permite operar el ciclo completo: alta de producto → venta con control de stock → facturación → registro de pago → impacto en reportes. *(RF-31)*
 
       * El modelo de datos demuestra ser aplicable a al menos 2 rubros distintos (ej. kiosco y tienda de indumentaria) sin cambios de código, sólo de configuración/datos. *(RF-32)*
 
