@@ -4,19 +4,18 @@
 
 *Sistema de Gestión y Facturación Ágil integrado con ARCA*
 
-**Fecha:** 19/08/2026
+**Proyecto:** Sistema de Gestión y Facturación Ágil integrado con ARCA
 
-**Versión del documento:** 1.0
+**Nombre corto del proyecto:** *JJT Manager*
 
-## **Acta de Constitución del Proyecto**
+**Fecha de emisión:** 19/08/2026
 
-**Proyecto:** Sistema de Gestión y Facturación Ágil integrado con ARCA 
+**Versión del documento:** 1.1 (revisión del 06/10/2026, pendiente de aprobación del sponsor)
 
-**Nombre corto del proyecto:**  *JJT Manager* 
-
-**Fecha:** 19/08/2026 
-
-**Versión del documento:** 1.0
+| Versión | Fecha | Cambios |
+| :---- | :---- | :---- |
+| 1.0 | 19/08/2026 | Emisión inicial. |
+| 1.1 | 06/10/2026 | Fecha de fin y calendario aclarados; metodología con sprints; presupuesto desglosado por integrante e infraestructura (USD 27.025); reportes del alcance alineados con los objetivos (rentabilidad); correcciones de formato y ortografía. Los cambios de fecha y presupuesto requieren aprobación del sponsor (Documento de Alcance, §7). |
 
 1. ### **Datos generales**
 
@@ -24,10 +23,10 @@
 | :---- | :---- |
 | Patrocinador (Sponsor) | Julio Gutierrez |
 | Director de proyecto | *Tomas Disandro* |
-| Equipo del proyecto | Juan Cruz Bulatovich: Frontend Jesus Manuel Martines: QA y QC Tomas Disandro: Backend |
+| Equipo del proyecto | Juan Cruz Bulatovich: Frontend; Jesus Manuel Martinez: QA y QC; Tomas Disandro: Backend |
 | Fecha de inicio | 19/08/2026 |
-| Fecha estimada de fin | \~21/02/2027 |
-| Metodología de gestión | Híbrida: fases predictivas para planificación/documentación y  desarrollo |
+| Fecha estimada de fin | 21/02/2027 (27 semanas de proyecto, contadas desde el lunes 17/08/2026, semana en que inicia el proyecto) |
+| Metodología de gestión | Híbrida: enfoque predictivo para planificación y documentación, y desarrollo iterativo en sprints de [N] semanas (duración a definir por el Director de Proyecto) |
 
 2. ### **Propósito y justificación del proyecto**
 
@@ -43,15 +42,15 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
    1. Diseñar un modelo de datos genérico, adaptable a distintos rubros comerciales (no atado a un tipo de negocio específico).
 
-      2. Implementar facturación electrónica integrada con los Web Services de ARCA, soportando certificados de homologación (testing) y de producción (credenciales reales).
+   2. Implementar facturación electrónica integrada con los Web Services de ARCA, soportando certificados de homologación (testing) y de producción (credenciales reales).
 
-      3. Desarrollar módulo de control de stock con alta/baja/modificación de productos, categorías, variantes y alertas de stock mínimo.
+   3. Desarrollar módulo de control de stock con alta/baja/modificación de productos, categorías, variantes y alertas de stock mínimo.
 
-      4. Desarrollar módulo de clientes y proveedores con gestión de cuentas corrientes (saldo, movimientos, límites de crédito).
+   4. Desarrollar módulo de clientes y proveedores con gestión de cuentas corrientes (saldo, movimientos, límites de crédito).
 
-      5. Soportar múltiples medios de pago (efectivo, tarjeta débito/crédito, transferencia, QR, cuenta corriente) y gestión de giftcards (emisión, carga, canje, saldo).
+   5. Soportar múltiples medios de pago (efectivo, tarjeta débito/crédito, transferencia, QR, cuenta corriente) y gestión de giftcards (emisión, carga, canje, saldo).
 
-      6. Generar reportes y estadísticas (ventas, stock, rentabilidad, clientes, medios de pago) exportables.
+   6. Generar reportes y estadísticas (ventas, stock, rentabilidad, clientes, medios de pago) exportables.
 
 4. ### **Alcance de alto nivel**
 
@@ -67,7 +66,7 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
 * Módulo de **Giftcards**: emisión, recarga, canje, consulta de saldo.
 
-* Módulo de **Reportes y Estadísticas**: ventas por período, productos más vendidos, stock crítico, estado de cuentas corrientes.
+* Módulo de **Reportes y Estadísticas**: ventas por período, productos más vendidos, stock crítico, estado de cuentas corrientes, rentabilidad.
 
 * Módulo de **Usuarios y permisos** (roles básicos: administrador, cajero).
 
@@ -118,25 +117,31 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
 **Costos de Infraestructura:**
 
-* Railway (Servidor): 5 dólares mensuales.
+* Railway (Servidor): 5 dólares mensuales × 5 meses (oct/2026–feb/2027, contratación al inicio de H2) = 25 dólares.
 
-**Costos de Personal :**
+**Costos de Personal:**
 
-* Jesus Manuel Martinez: 25 dólares/hora
+* Tomas Disandro: 360 horas × 25 dólares/hora = 9.000 dólares
 
-* Tomas Disandro: 25 dólares/hora
+* Juan Cruz Bulatovich: 360 horas × 25 dólares/hora = 9.000 dólares
 
-* Juan Cruz Bulatovich: 25 dólares/hora
+* Jesus Manuel Martinez: 360 horas × 25 dólares/hora = 9.000 dólares
 
-**Costos totales basado en las horas de trabajo:**
+*(Reparto de horas por integrante propuesto, a confirmar por el Director de Proyecto.)*
 
-* 1080 horas \= 27000 dólares
+**Costos totales basados en las horas de trabajo:**
 
-9.  **Criterios de éxito**
+* Subtotal de personal: 1080 horas = 27000 dólares
+
+* Infraestructura: 25 dólares
+
+* **Total general: 27025 dólares**
+
+9. ### **Criterios de éxito**
 
 1. El sistema emite facturas electrónicas válidas contra el ambiente de homologación de ARCA (CAE obtenido correctamente).
 
-2. El sistema permite operar el ciclo completo: alta de producto → venta con control de stock → facturación → registro de pago → impactó en reportes.
+2. El sistema permite operar el ciclo completo: alta de producto → venta con control de stock → facturación → registro de pago → impacto en reportes.
 
 3. El modelo de datos demuestra ser aplicable a al menos 2 rubros distintos (ej. kiosco y tienda de indumentaria) sin cambios de código, sólo de configuración/datos.
 
@@ -150,12 +155,13 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
 El Director de Proyecto **Tomas Disandro**  está autorizado a: \- Asignar tareas dentro del equipo. \- Priorizar el backlog en conjunto con el equipo. \- Proponer cambios de alcance siguiendo el proceso de control de cambios. \- Representar al equipo ante el sponsor para reportar avance.
 
-> 12. ### **Aprobación**
+12. ### **Aprobación**
+
+*Pendiente de firma: la v1.1 modifica fecha de fin y presupuesto, por lo que requiere aprobación explícita del sponsor. Cada firma y su fecha las completa cada persona al firmar.*
 
 | Rol | Nombre | Firma / Conformidad | Fecha |
 | :---- | :---- | :---- | :---- |
-| Sponsor  | Julio gutierrez |  | 19/08/2026 |
-| Integrante 1 | Juan Cruz Bulatovich |  | 19/08/2026 |
-| Integrante 2 | Jesus Manuel Martinez |  | 19/08/2026 |
-| Integrante 3 | Tomas Disandro |  | 19/08/2026 |
-
+| Sponsor | Julio Gutierrez | | |
+| Integrante 1 | Juan Cruz Bulatovich | | |
+| Integrante 2 | Jesus Manuel Martinez | | |
+| Integrante 3 | Tomas Disandro | | |
