@@ -27,7 +27,7 @@ Fecha	**25/08/2026** (versión 1.1: 06/10/2026)
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 25/08/2026 | Emisión inicial. |
-| 1.1 | 06/10/2026 | Se define la metodología de sprints (§3.1) y se agregan las fechas de los hitos (§3). La EDT embebida se alinea con `docs/EDT.md` v1.1: RF-28 en 8.1/8.2, RNF-04/05/09 en 4.4/4.6 y las 8 actividades de QA por módulo. El equipo (§4) refleja la participación transversal de QA en la Lista de Actividades v1.1. El H3 incluye Usuarios y permisos. Se corrigen errores de redacción. Alcance incluido/excluido: **sin cambios**. |
+| 1.1 | 06/10/2026 | Se define la metodología de sprints (§3.1) y se agregan las fechas de los hitos (§3). La EDT embebida se alinea con `docs/EDT.md` v1.1: RF-28 en 8.1/8.2, RNF-04/05/09 en 4.4/4.6 y las 8 actividades de QA por módulo. El equipo (§4) refleja la participación transversal de QA en la Lista de Actividades v1.1. El H3 incluye Usuarios y permisos. Se corrigen errores de redacción. Se incorporan a §5 los riesgos R6, R10 y R11 del Plan de Riesgos. Alcance incluido/excluido: **sin cambios**. |
 
 > Este documento desarrolla el **alcance de alto nivel** del Acta de Constitución en una Declaración de Alcance, una Estructura de Desglose del Trabajo (EDT), un cronograma de hitos y sprints, y el **proceso formal de control de cambios** (sección 7) al que debe someterse cualquier pedido que exceda lo aquí definido. Cada apartado cita la sección del Acta o del Documento de Requerimientos de la que se deriva.
 
@@ -162,6 +162,11 @@ Los **sprints duran 2 semanas** y se ejecutan en H2 y H3 (semanas 7 a 23): cuatr
 | :---- | :---- | :---- | :---- |
 | Complejidad/documentación insuficiente de los WS de ARCA | Alto | Media | Reservar tiempo temprano para spike técnico de homologación (EDT 2.3); usar librerías de terceros probadas si existen. |
 | Cambios de alcance no controlados ("scope creep") por ser un dominio muy amplio (multirubro) | Medio | Alta | Proceso formal de control de cambios (ver sección 7). |
+| Estimación de esfuerzo insuficiente: H2 está al 101% de su capacidad, lo que puede agotar la reserva y desviar fechas (R6) | Medio | Media | Registro semanal de horas reales contra la línea base y recalibración al cierre de H2; reserva de 110 h (ver Plan de Riesgos). |
+| Dedicación parcial del equipo (13,3 h/semana por integrante): si la disponibilidad real baja en ciertas semanas, se atrasan actividades (R10) | Bajo | Alta | Planificar sobre 40 h/semana del equipo, acordar con anticipación las semanas de menor disponibilidad y nivelar la carga (ver Cronograma §6). |
+| Pruebas concentradas al final: defectos críticos detectados tarde que consumen la holgura de H4 (R11) | Medio | Media | Pruebas por módulo al cierre de cada hito (actividades de QA 3.5, 4.7, 5.4, 6.5, 7.7 y 8.3) y regresión continua (ver Plan de Calidad). |
+
+El registro completo de riesgos (R1 a R12, con análisis cuantitativo y plan de respuesta) está en el Plan de Gestión de Riesgos (JJT-GPI-09).
 
 6. ### **Criterios de éxito y restricciones**
 

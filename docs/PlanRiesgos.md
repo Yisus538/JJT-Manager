@@ -72,7 +72,7 @@ Las escalas se calibran a este proyecto: el impacto se expresa en horas adiciona
 | R11 | Si las pruebas se concentran en H4, los defectos críticos se detectarán tarde y consumirán la holgura final. | Calidad | 3 | 3 | 9 | Jesus | 9.x · H4 | Lista de Actividades 9.0; Plan de Calidad |
 | R12 | **Oportunidad:** si se encuentra una librería de terceros probada para WSAA/WSFEv1, se reducirá el esfuerzo de 4.1.x. | Oportunidad | 3 | 3 | 9 | Tomás | 4.1.x · H2 | Acta — Riesgos (estrategia inicial) |
 
-*Los riesgos R1 y R2 provienen del Acta de Constitución y del Documento de Alcance (§5); R3 y R4 de los supuestos del Acta; R5 de la restricción RNF-10; R7 y R8 de RNF-04/05 y RF-32; R6, R10 y R11 del análisis de capacidad y del plan de pruebas de este lote de documentos. R12 es una oportunidad (efecto positivo) y no suma exposición. Los riesgos R6, R10 y R11 se proponen para ser incorporados a la sección de riesgos del Documento de Alcance (§5) en su próxima versión.*
+*Los riesgos R1 y R2 provienen del Acta de Constitución y del Documento de Alcance (§5); R3 y R4 de los supuestos del Acta; R5 de la restricción RNF-10; R7 y R8 de RNF-04/05 y RF-32; R6, R10 y R11 del análisis de capacidad y del plan de pruebas de este lote de documentos. R12 es una oportunidad (efecto positivo) y no suma exposición. Los riesgos R6, R10 y R11 están incorporados a la sección de riesgos del Documento de Alcance (§5, v1.1).*
 
 ## **4. Análisis cuantitativo (VME)**
 
