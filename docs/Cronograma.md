@@ -265,5 +265,5 @@ Se aplicó el método de la ruta crítica (CPM) a la red de la Lista de Activida
 | H3 | Semana 23 (24/01/2027) | Clientes/Proveedores y cuentas corrientes (5.x); pagos y giftcards (6.x); reportes y exportación (7.x); roles administrador y cajero (8.x); pruebas funcionales de cada módulo (5.4, 6.5, 7.7, 8.3). | RF-12 a RF-30 |
 | H4 | Semana 27 (21/02/2027) | Ciclo integral alta → venta → facturación → pago → reportes (9.1); genericidad en ≥2 rubros (9.2); validación final contra homologación (9.3); entrega final y cierre (9.4). | Criterios de éxito 2 y 3 (Alcance §6); RF-31, RF-32 |
 
-*Estado al 06/10/2026 (semana 8): la fecha de la compuerta H1 (27/09/2026) ya pasó. Al cierre de esta revisión no hay en `docs/` evidencia de 1.5, 2.1, 2.2, 2.3 ni 2.4 ni de un acta de revisión de hito; el Plan de Proyecto (JJT-GPI-12, §5) las registra como pendientes de confirmar.*
+*Estado al 06/10/2026 (semana 8): la fecha de la compuerta H1 (27/09/2026) ya pasó. Al cierre de esta revisión no hay en `docs/` evidencia de 2.1, 2.2, 2.3 ni 2.4 ni de un acta de revisión de hito (1.5 se cerró el 07/10/2026, JJT-GPI-13); el Plan de Proyecto (JJT-GPI-12, §5) las registra como pendientes de confirmar.*
 

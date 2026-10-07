@@ -116,7 +116,7 @@ Flujo del defecto: registrar → clasificar → asignar → corregir → verific
 | H3 | H2 aprobado; mecanismo de ambiente homologación/producción configurable (4.6; no requiere credenciales reales). | PC-CLI, PC-PAG, PC-REP y PC-USR aprobadas; regresión de H2 sin fallas; 0 críticos abiertos. |
 | H4 | H3 aprobado; funcionalidad completa. | PC-E2E, PC-GEN y PC-HOM aprobadas (CE-1 a CE-3 cumplidos); regresión completa; 0 críticos y plan para los mayores; documentación de cierre entregada. |
 
-*Estado al 07/10/2026 (semana 8): H1 no tiene acta de revisión de hito ni evidencia en `docs/` de 1.5 y 2.1–2.4. La entrada de H2 relativa a la CUIT de prueba y al certificado de testing quedó confirmada (riesgo R4). H2 está en ejecución sin cumplir la salida de H1: hasta documentar el cierre de H1 (o aprobar el desvío por control de cambios), esa condición se registra como incumplida (Plan de Proyecto §5, observación 9).*
+*Estado al 07/10/2026 (semana 8): H1 no tiene acta de revisión de hito ni evidencia en `docs/` de 2.1–2.4; la revisión de pares 1.5 se cerró el 07/10/2026 (Registro de Revisión de Pares, JJT-GPI-13). La entrada de H2 relativa a la CUIT de prueba y al certificado de testing quedó confirmada (riesgo R4). H2 está en ejecución sin cumplir la salida de H1: hasta documentar el cierre de H1 (o aprobar el desvío por control de cambios), esa condición se registra como incumplida (Plan de Proyecto §5, observación 9).*
 
 ## **8. Gestión de configuración y versiones**
 
