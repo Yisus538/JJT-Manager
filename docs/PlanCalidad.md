@@ -10,13 +10,13 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
 | Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
-| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Aprobado por el Sponsor |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. Cada prueba (PC-xxx) se vincula a la actividad de QA que la ejecuta en la Lista v1.1 (1.5, 2.4, 3.5, 4.7, 5.4, 6.5, 7.7, 8.3). El criterio de entrada de H1 deja de afirmar que el Acta está aprobada (la aprobación está pendiente). PC-NF pasa a cubrir también RNF-10. Los documentos se versionan en el repositorio git (`docs/`), no en Drive. Se eliminan citas bibliográficas internas. |
-| 1.2 | 07/10/2026 | Se alinea el resultado del spike 2.3 con el Plan de Riesgos (R1): conexión a homologación documentada y CAE de homologación obtenido. Se registra el estado de la compuerta H1 y la entrada de H2 (certificado de testing sin confirmar, R4). Se vincula la estrategia de pruebas con los sprints S1–S8 (backlog de defectos y revisión de sprint). |
+| 1.2 | 07/10/2026 | Se alinea el resultado del spike 2.3 con el Plan de Riesgos (R1): conexión a homologación documentada y CAE de homologación obtenido. Se registra el estado de la compuerta H1 y la entrada de H2 (R4 confirmado). Se vincula la estrategia de pruebas con los sprints S1–S8 (backlog de defectos y revisión de sprint). |
 
 > Plan de calidad y pruebas. Define cómo se asegura que el producto cumple los criterios de éxito y los requerimientos vigentes: criterios de aceptación, métricas, actividades de aseguramiento por hito, niveles de prueba, gestión de defectos, gestión de configuración y compuertas de calidad. Cada prueba referencia el requerimiento que verifica, para mantener la trazabilidad completa.
 
@@ -111,12 +111,12 @@ Flujo del defecto: registrar → clasificar → asignar → corregir → verific
 
 | Hito | Criterio de entrada | Criterio de salida (compuerta) |
 | :---- | :---- | :---- |
-| H1 | Acta emitida (19/08/2026); aprobación del Sponsor pendiente de registrar. | Documentos de gestión aprobados (revisión de pares 1.5 cerrada); stack y modelo de datos definidos; modelo revisado contra dos rubros (2.4); spike con conexión a homologación documentada y un CAE de homologación obtenido para una factura de prueba; criterios CE-1 a CE-3 acordados. |
-| H2 | H1 aprobado; certificado de testing disponible. | PC-STK y PC-ARCA aprobadas; CAE obtenido en homologación para A/B/C y NC/ND; 0 críticos abiertos; 0 secretos en repositorio y logs. |
+| H1 | Acta emitida (19/08/2026) y aprobada por el Sponsor. | Documentos de gestión aprobados (revisión de pares 1.5 cerrada); stack y modelo de datos definidos; modelo revisado contra dos rubros (2.4); spike con conexión a homologación documentada y un CAE de homologación obtenido para una factura de prueba; criterios CE-1 a CE-3 acordados. |
+| H2 | H1 aprobado; CUIT de prueba y certificado de testing disponibles (R4 confirmado el 07/10/2026). | PC-STK y PC-ARCA aprobadas; CAE obtenido en homologación para A/B/C y NC/ND; 0 críticos abiertos; 0 secretos en repositorio y logs. |
 | H3 | H2 aprobado; mecanismo de ambiente homologación/producción configurable (4.6; no requiere credenciales reales). | PC-CLI, PC-PAG, PC-REP y PC-USR aprobadas; regresión de H2 sin fallas; 0 críticos abiertos. |
 | H4 | H3 aprobado; funcionalidad completa. | PC-E2E, PC-GEN y PC-HOM aprobadas (CE-1 a CE-3 cumplidos); regresión completa; 0 críticos y plan para los mayores; documentación de cierre entregada. |
 
-*Estado al 07/10/2026 (semana 8): H1 no tiene acta de revisión de hito ni evidencia en `docs/` de 1.5 y 2.1–2.4, y el certificado de testing exigido como entrada de H2 no está confirmado (riesgo R4). H2 está en ejecución sin cumplir la entrada ni la salida de H1: hasta documentar el cierre de H1 (o aprobar el desvío por control de cambios), esa condición se registra como incumplida (Plan de Proyecto §5, observación 9).*
+*Estado al 07/10/2026 (semana 8): H1 no tiene acta de revisión de hito ni evidencia en `docs/` de 1.5 y 2.1–2.4. La entrada de H2 relativa a la CUIT de prueba y al certificado de testing quedó confirmada (riesgo R4). H2 está en ejecución sin cumplir la salida de H1: hasta documentar el cierre de H1 (o aprobar el desvío por control de cambios), esa condición se registra como incumplida (Plan de Proyecto §5, observación 9).*
 
 ## **8. Gestión de configuración y versiones**
 

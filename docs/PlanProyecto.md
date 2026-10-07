@@ -10,13 +10,13 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
 | Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
-| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Aprobado por el Sponsor |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. El registro de documentos refleja las versiones vigentes (Acta v1.2 y documentos 02 a 12 en v1.1) y los archivos reales del repositorio. Se actualiza el estado de las 7 observaciones de consistencia de la v1.0 y se agregan las surgidas de la revisión del 06/10/2026 (§5). La matriz de trazabilidad usa los 7 objetivos específicos del Acta v1.2 y los criterios de éxito, e incorpora las actividades de QA. Se eliminan citas bibliográficas internas. |
-| 1.2 | 07/10/2026 | Registro de documentos actualizado (Acta v1.3; Lista, Cronograma, Estimación, Riesgos, Calidad y Comunicaciones v1.2). Trazabilidad: Facturación incorpora 9.3 y H4, y los objetivos 4–7 tienen riesgos asociados. Nuevas observaciones 16 a 18 (cierre de la revisión del 07/10/2026); Alcance v1.2. |
+| 1.2 | 07/10/2026 | Registro de documentos actualizado (Acta v1.3; Lista, Cronograma, Estimación, Riesgos, Calidad y Comunicaciones v1.2). Trazabilidad: Facturación incorpora 9.3 y H4, y los objetivos 4–7 tienen riesgos asociados. Nuevas observaciones 16 a 18 (cierre de la revisión del 07/10/2026); Alcance v1.2. Se registra la aprobación del Sponsor de la documentación (observación 8 resuelta). |
 
 > Plan de proyecto. Documento integrador que explica cómo se ejecutará, monitoreará y cerrará el proyecto. Organiza la documentación en las 12 secciones de un plan de proyecto, identifica qué documentos faltaban y los incorpora, y fija la trazabilidad completa objetivo → requerimiento → EDT → hito → riesgo → prueba. Responde: ¿qué?, ¿quién?, ¿cuándo?, ¿con qué?, ¿cuánto?, ¿qué puede salir mal? y ¿cómo sabremos que vamos bien?
 
@@ -60,18 +60,18 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 
 | Código | Documento | Fecha | Versión | Estado | Ubicación |
 | :---- | :---- | :---- | :----: | :---- | :---- |
-| JJT-GPI-01 | Acta de Constitución del Proyecto | 19/08/2026 (rev. 07/10/2026) | 1.3 | Vigente · aprobación del sponsor pendiente | `docs/Acta Constitucion.md` |
-| JJT-GPI-02 | Registro de Interesados | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/StakeHolders.md` |
-| JJT-GPI-03 | Documento de Requerimientos | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/Requerimientos.md` |
-| JJT-GPI-04 | Documento de Alcance y Gestión | 25/08/2026 (rev. 07/10/2026) | 1.2 | Vigente | `docs/Alcance.md` |
-| JJT-GPI-05 | Estructura de Desglose del Trabajo (EDT) | 26/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/EDT.md` |
-| JJT-GPI-06 | Lista de Actividades | 26/08/2026 (rev. 07/10/2026) | 1.2 | Vigente | `docs/ListaActividades.md` (PDF: `docs/ListaActividades-JJT-Manager.pdf`) |
-| JJT-GPI-07 | Cronograma del Proyecto | 07/10/2026 | 1.2 | Borrador para revisión | `docs/Cronograma.md` (Gantt en PDF: `docs/Cronograma_Gantt_JJT_Manager.pdf`) |
-| JJT-GPI-08 | Estimación de Esfuerzo y Presupuesto | 07/10/2026 | 1.2 | Borrador para revisión | `docs/EstimacionPresupuesto.md` |
-| JJT-GPI-09 | Plan de Gestión de Riesgos | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanRiesgos.md` |
-| JJT-GPI-10 | Plan de Calidad y Pruebas | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanCalidad.md` |
-| JJT-GPI-11 | Plan de Comunicaciones y Seguimiento | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanComunicaciones.md` |
-| JJT-GPI-12 | Plan de Proyecto (documento integrador) | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanProyecto.md` |
+| JJT-GPI-01 | Acta de Constitución del Proyecto | 19/08/2026 (rev. 07/10/2026) | 1.3 | Vigente · aprobada por el Sponsor | `docs/Acta Constitucion.md` |
+| JJT-GPI-02 | Registro de Interesados | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente · aprobado por el Sponsor | `docs/StakeHolders.md` |
+| JJT-GPI-03 | Documento de Requerimientos | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente · aprobado por el Sponsor | `docs/Requerimientos.md` |
+| JJT-GPI-04 | Documento de Alcance y Gestión | 25/08/2026 (rev. 07/10/2026) | 1.2 | Vigente · aprobado por el Sponsor | `docs/Alcance.md` |
+| JJT-GPI-05 | Estructura de Desglose del Trabajo (EDT) | 26/08/2026 (rev. 06/10/2026) | 1.1 | Vigente · aprobado por el Sponsor | `docs/EDT.md` |
+| JJT-GPI-06 | Lista de Actividades | 26/08/2026 (rev. 07/10/2026) | 1.2 | Vigente · aprobado por el Sponsor | `docs/ListaActividades.md` (PDF: `docs/ListaActividades-JJT-Manager.pdf`) |
+| JJT-GPI-07 | Cronograma del Proyecto | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/Cronograma.md` (Gantt en PDF: `docs/Cronograma_Gantt_JJT_Manager.pdf`) |
+| JJT-GPI-08 | Estimación de Esfuerzo y Presupuesto | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/EstimacionPresupuesto.md` |
+| JJT-GPI-09 | Plan de Gestión de Riesgos | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/PlanRiesgos.md` |
+| JJT-GPI-10 | Plan de Calidad y Pruebas | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/PlanCalidad.md` |
+| JJT-GPI-11 | Plan de Comunicaciones y Seguimiento | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/PlanComunicaciones.md` |
+| JJT-GPI-12 | Plan de Proyecto (documento integrador) | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/PlanProyecto.md` |
 
 *Los códigos JJT-GPI-NN son una convención propuesta en este plan para identificar y citar cada documento; cada documento lo declara en su encabezado. Los borradores v1.0 de los documentos 07 a 12 (PDF, 05/10/2026) quedan en `docs/extras/DOCS Faltantes/` solo como referencia histórica: están reemplazados por las versiones Markdown indicadas.*
 
@@ -106,7 +106,7 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 | 5 | El Acta listaba los reportes sin rentabilidad. | JJT-GPI-01 | Resuelta | Alineado en Acta v1.1. |
 | 6 | Carga semanal por encima de 40 h (pico de 83 h) y H2 al 101%. | JJT-GPI-07 §6; JJT-GPI-08 §5 | Mitigada | Calendario nivelado en Cronograma v1.1: pico de 47,8 h y 10 semanas entre 40 y 50 h. La demanda de H2 (365 h) sigue superando en 5 h su capacidad: se cubre con la reserva (decisión del Sponsor si se consume). |
 | 7 | El presupuesto de USD 27.000 del Acta cubría solo personal. | JJT-GPI-01; JJT-GPI-08 §6 | Resuelta | Acta v1.1 declara ambos rubros (USD 27.025). |
-| 8 | **Nueva.** Los documentos se citan como «aprobados» pero ninguna aprobación está firmada (Acta, secciones de aprobación vacías; v1.1/v1.2 modifica fecha y presupuesto). | JJT-GPI-01 §12; JJT-GPI-07; JJT-GPI-10 | Abierta | Redacción corregida (se dice «vigente»/«pendiente de aprobación»). Falta la firma del Sponsor y del equipo. |
+| 8 | **Nueva.** Los documentos se citan como «aprobados» pero ninguna aprobación estaba registrada (Acta, secciones de aprobación vacías; v1.1/v1.2 modifica fecha y presupuesto). | JJT-GPI-01 §12; JJT-GPI-07; JJT-GPI-10 | Resuelta | El Sponsor aprobó el Acta (incluidos los cambios de fecha y presupuesto) y los documentos de gestión, confirmado por el equipo el 07/10/2026. Queda registrar firma y fecha de cada persona en las tablas de aprobación. |
 | 9 | **Nueva.** La compuerta H1 (semana 6, 27/09/2026) ya venció y no hay en `docs/` evidencia de 1.5, 2.1, 2.2, 2.3 y 2.4 ni acta de revisión de hito. | JJT-GPI-07 §7; JJT-GPI-10 §7 | Abierta | Confirmar el estado real de 2.1–2.3 y documentarlo (o replanificar por control de cambios); realizar la revisión de H1. |
 | 10 | **Nueva.** La exposición esperada de riesgos (147,2 h) supera la reserva (110 h) por 37,2 h, y la reserva coincide con la holgura de capacidad. | JJT-GPI-09 §4; JJT-GPI-08 §5 | Gestionada | Reserva asignada por prioridad (R1, R2, R5, R11, R10, R6); R7, R8, R3, R4 y R9 sin reserva, con escalamiento al Sponsor si se materializan. |
 | 11 | **Nueva.** Dependencias lógicas invertidas en 6.0 (QR antes de la pasarela; cuenta corriente antes de 5.2) y precedencia 3.4 → 5.1 sin justificación. | JJT-GPI-06 | Resuelta | Lista v1.1: 6.4 antecede a 6.1.3, 6.1.1 sigue a 5.2, se elimina 3.4 → 5.1. |
@@ -120,7 +120,7 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 
 ## **6. Aprobación**
 
-*Pendiente.*
+*Aprobado por el Sponsor (confirmado por el equipo el 07/10/2026). Falta registrar la firma y la fecha de cada persona en la tabla.*
 
 | Rol | Nombre | Firma / Conformidad | Fecha |
 | :---- | :---- | :---- | :---- |

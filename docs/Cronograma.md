@@ -10,7 +10,7 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
 | Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
-| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Aprobado por el Sponsor |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |

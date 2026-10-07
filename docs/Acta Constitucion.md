@@ -12,14 +12,14 @@
 
 **Código del documento:** JJT-GPI-01
 
-**Versión del documento:** 1.3 (revisión del 07/10/2026, pendiente de aprobación del sponsor)
+**Versión del documento:** 1.3 (revisión del 07/10/2026, aprobada por el sponsor)
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 19/08/2026 | Emisión inicial. |
 | 1.1 | 06/10/2026 | Fecha de fin y calendario aclarados; metodología con sprints; presupuesto desglosado por integrante e infraestructura (USD 27.025); reportes del alcance alineados con los objetivos (rentabilidad); correcciones de formato y ortografía. Los cambios de fecha y presupuesto requieren aprobación del sponsor (Documento de Alcance, §7). |
 | 1.2 | 06/10/2026 | Se define la duración de los sprints (2 semanas; antes figuraba «[N]»). Se agrega el objetivo específico 7 (usuarios y permisos), que estaba en el alcance sin objetivo asociado, y el interesado Railway (proveedor de infraestructura), ya presente en el Registro de Interesados. El nombre de H3 incluye Usuarios y permisos. Se reformula el supuesto sobre la validación del sponsor y se ordenan las listas de restricciones, supuestos y autoridad. Se unifica la grafía «Tomás». Mantiene pendiente la aprobación del sponsor de los cambios de fecha y presupuesto de la v1.1. |
-| 1.3 | 07/10/2026 | El objetivo 6 se alinea con los reportes del alcance (se quitan «clientes» y «medios de pago», que no estaban en el alcance ni en la EDT). El presupuesto declara que USD 27.000 es el techo de personal, con 970 h de línea base (USD 24.250) y 110 h de reserva (USD 2.750); los importes se unifican en formato USD y se corrige el título del total. Se define el rol del comerciante/usuario final. Se anidan las listas de §4. |
+| 1.3 | 07/10/2026 | El objetivo 6 se alinea con los reportes del alcance (se quitan «clientes» y «medios de pago», que no estaban en el alcance ni en la EDT). El presupuesto declara que USD 27.000 es el techo de personal, con 970 h de línea base (USD 24.250) y 110 h de reserva (USD 2.750); los importes se unifican en formato USD y se corrige el título del total. Se define el rol del comerciante/usuario final. Se anidan las listas de §4. El Sponsor aprobó el Acta, incluidos los cambios de fecha de fin y de presupuesto introducidos desde la v1.1 (aprobación confirmada por el equipo; fecha de firma a registrar en §12). |
 
 1. ### **Datos generales**
 
@@ -182,7 +182,7 @@ El Director de Proyecto **Tomás Disandro** está autorizado a:
 
 12. ### **Aprobación**
 
-*Pendiente de firma: la v1.1 (vigente en v1.2) modifica fecha de fin y presupuesto, por lo que requiere aprobación explícita del sponsor. Cada firma y su fecha las completa cada persona al firmar.*
+*Aprobada por el Sponsor, incluidos los cambios de fecha de fin y de presupuesto de la v1.1 (confirmado por el equipo). Falta registrar la firma y la fecha de cada persona en la tabla.*
 
 | Rol | Nombre | Firma / Conformidad | Fecha |
 | :---- | :---- | :---- | :---- |
