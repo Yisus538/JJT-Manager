@@ -9,13 +9,14 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Código | JJT-GPI-08 |
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
-| Horizonte | 27 semanas (19/08/2026 – 21/02/2027) |
-| Fecha / Versión / Estado | 06/10/2026 · 1.1 · Borrador para revisión |
+| Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. Se reparten las horas entre las 48 actividades de la Lista v1.1 (se incorporan las 8 actividades de QA por módulo con las horas de Jesus que antes no estaban asignadas a ninguna actividad). Se eliminan citas bibliográficas internas. Se agrega la sensibilidad de la estimación con la fórmula PERT y se aclara que la reserva queda comprometida (ver Plan de Riesgos §4). Totales por paquete, por rol, por hito y presupuesto: sin cambios. |
+| 1.2 | 07/10/2026 | La tabla de §4 se hace coherente con las horas por actividad de §3 (la versión anterior no lo era: Jesus figuraba con 83 h de 9.0 aunque las cuatro actividades de 9.x eran suyas, lo que sumaba 370 h para Jesus, 335 para Tomás y 265 para Juan). Se redistribuyen 63 h de apoyo entre integrantes según su rol y la carga queda en 323/324/323 h. Se declara que la gestión continua y los documentos 07–12 no tienen horas asignadas (§7), en lugar de afirmar que están incluidas en 1.0. |
 
 > Estimación de esfuerzo y presupuesto. Desarrolla la estimación del proyecto en horas y costos a partir de la EDT y de la Lista de Actividades, respetando el presupuesto de alto nivel del Acta v1.2 (1.080 h de personal = USD 27.000, más USD 25 de infraestructura = USD 27.025). La estimación es una aproximación explícita, reproducible y revisable: se comunica como rango con sus supuestos, no como una promesa.
 
@@ -120,20 +121,34 @@ Distribución del esfuerzo esperado por integrante según su rol (Acta — Equip
 
 | EDT | Paquete de trabajo | Tomás (Backend/PM) | Juan (Frontend) | Jesus (QA/QC) | Total h |
 | :---- | :---- | :----: | :----: | :----: | :----: |
-| 1.0 | Gestión del Proyecto | 30 | 15 | 15 | 60 |
-| 2.0 | Diseño y Arquitectura | 45 | 25 | 30 | 100 |
-| 3.0 | Módulo Productos y Stock | 30 | 65 | 30 | 125 |
-| 4.0 | Módulo Facturación (ARCA) | 105 | 60 | 75 | 240 |
-| 5.0 | Clientes/Proveedores y Cuentas Corrientes | 30 | 25 | 25 | 80 |
-| 6.0 | Módulo Pagos y Giftcards | 25 | 50 | 30 | 105 |
-| 7.0 | Módulo Reportes y Estadísticas | 20 | 45 | 25 | 90 |
-| 8.0 | Módulo Usuarios y Permisos | 10 | 20 | 10 | 40 |
-| 9.0 | Pruebas, Integración y Cierre | 28 | 19 | 83 | 130 |
+| 1.0 | Gestión del Proyecto | 45 | 0 | 15 | 60 |
+| 2.0 | Diseño y Arquitectura | 70 | 0 | 30 | 100 |
+| 3.0 | Módulo Productos y Stock | 0 | 95 | 30 | 125 |
+| 4.0 | Módulo Facturación (ARCA) | 162 | 3 | 75 | 240 |
+| 5.0 | Clientes/Proveedores y Cuentas Corrientes | 42 | 13 | 25 | 80 |
+| 6.0 | Módulo Pagos y Giftcards | 0 | 75 | 30 | 105 |
+| 7.0 | Módulo Reportes y Estadísticas | 0 | 65 | 25 | 90 |
+| 8.0 | Módulo Usuarios y Permisos | 0 | 30 | 10 | 40 |
+| 9.0 | Pruebas, Integración y Cierre | 4 | 43 | 83 | 130 |
 | | **Esfuerzo esperado** | **323** | **324** | **323** | **970** |
 | | Reserva (distribución equitativa) | 37 | 36 | 37 | 110 |
 | | **Total con reserva (h)** | **360** | **360** | **360** | **1.080** |
 
-Jesus (QA/QC) concentra la ejecución del paquete 9.0 y participa en cada módulo con una actividad de QA propia (1.5, 2.4, 3.5, 4.7, 5.4, 6.5, 7.7 y 8.3), que suman 240 h fuera del paquete 9.0 y quedan programadas en el Cronograma. Tomás y Juan comparten las tareas de pruebas de componente de su propio desarrollo (pruebas unitarias dentro de las horas de cada actividad).
+Jesus (QA/QC) ejecuta el paquete 9.0 junto con una actividad de QA propia en cada módulo (1.5, 2.4, 3.5, 4.7, 5.4, 6.5, 7.7 y 8.3, que suman 240 h). Tomás y Juan comparten las tareas de pruebas de componente de su propio desarrollo (pruebas unitarias dentro de las horas de cada actividad).
+
+**Horas de apoyo entre integrantes.** Cada actividad conserva un responsable principal (§3, Lista y Cronograma), pero parte de sus horas las ejecuta otro integrante según su rol. Con estas transferencias la carga queda equilibrada (323/324/323 h) y cada integrante tiene 360 h disponibles con la reserva repartida de forma equitativa:
+
+| Actividad | Horas | Responsable principal | Apoyo | Qué hace el apoyo |
+| :---- | :----: | :---- | :---- | :---- |
+| 4.5 Exportación de comprobantes PDF | 17 | Tomás (14 h) | Juan (3 h) | Diseño y maquetado del comprobante imprimible |
+| 5.1 ABM clientes/proveedores | 21 | Tomás (13 h) | Juan (8 h) | Formularios y pantallas de alta, baja y modificación |
+| 5.3 Consulta de estado de cuenta | 12 | Tomás (7 h) | Juan (5 h) | Vista de estado de cuenta |
+| 9.1 Ciclo integral | 45 | Jesus (26 h) | Juan (19 h) | Ajustes de interfaz y revisión responsive (RNF-06) de los defectos detectados; carga de datos de demostración |
+| 9.2 Genericidad en ≥2 rubros | 30 | Jesus (16 h) | Juan (14 h) | Configuración de catálogo, categorías y variantes de los dos rubros |
+| 9.3 Validación final ARCA | 25 | Jesus (21 h) | Tomás (4 h) | Soporte de la integración WSAA/WSFEv1 y análisis de rechazos |
+| 9.4 Entrega final y cierre | 30 | Jesus (20 h) | Juan (10 h) | Demostración y validación con el comerciante (Plan de Comunicaciones §2) y ajustes de usabilidad |
+
+El reparto de §3 sigue siendo por actividad; los totales por paquete, por hito y el presupuesto no cambian.
 
 ## **5. Capacidad frente a demanda por hito**
 
@@ -194,4 +209,4 @@ Línea base de costo por hito (valor planificado acumulado, sin reserva). Es la 
 - No existen datos históricos de proyectos anteriores del equipo; las estimaciones se apoyan en juicio de experto. Al cierre de cada hito se registra tamaño y esfuerzo real para calibrar (error relativo = |real − estimado| / real).
 - La tarifa de USD 25/h es única para los tres integrantes (Acta). Los costos de infraestructura se limitan al servidor Railway.
 - La mayor incertidumbre está en 4.0 Facturación (ARCA): su rango (190–300 h) es el más amplio en términos absolutos, lo que se recoge como riesgo R1 del Plan de Riesgos.
-- El esfuerzo no incluye reuniones de coordinación ni redacción de informes de seguimiento más allá de lo estimado en 1.0.
+- Las 60 h de 1.0 están consumidas por 1.1–1.5 (8 + 8 + 16 + 13 + 15). **No hay horas asignadas** a la gestión continua (reunión de coordinación semanal, informes de estado quincenales o semanales en H2, registro de horas, cálculo de SPI/CPI y revisiones de sprint) ni a la elaboración y mantenimiento de los documentos 07–12. Hasta que el Director de Proyecto decida cómo financiarlas (por ejemplo, una actividad nueva de gestión continua en 1.0, que obliga a re-estimar), se cubren con la reserva, que ya está comprometida (Plan de Riesgos §4): es una exposición adicional no cuantificada.

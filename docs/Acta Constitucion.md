@@ -12,13 +12,14 @@
 
 **Código del documento:** JJT-GPI-01
 
-**Versión del documento:** 1.2 (revisión del 06/10/2026, pendiente de aprobación del sponsor)
+**Versión del documento:** 1.3 (revisión del 07/10/2026, pendiente de aprobación del sponsor)
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 19/08/2026 | Emisión inicial. |
 | 1.1 | 06/10/2026 | Fecha de fin y calendario aclarados; metodología con sprints; presupuesto desglosado por integrante e infraestructura (USD 27.025); reportes del alcance alineados con los objetivos (rentabilidad); correcciones de formato y ortografía. Los cambios de fecha y presupuesto requieren aprobación del sponsor (Documento de Alcance, §7). |
 | 1.2 | 06/10/2026 | Se define la duración de los sprints (2 semanas; antes figuraba «[N]»). Se agrega el objetivo específico 7 (usuarios y permisos), que estaba en el alcance sin objetivo asociado, y el interesado Railway (proveedor de infraestructura), ya presente en el Registro de Interesados. El nombre de H3 incluye Usuarios y permisos. Se reformula el supuesto sobre la validación del sponsor y se ordenan las listas de restricciones, supuestos y autoridad. Se unifica la grafía «Tomás». Mantiene pendiente la aprobación del sponsor de los cambios de fecha y presupuesto de la v1.1. |
+| 1.3 | 07/10/2026 | El objetivo 6 se alinea con los reportes del alcance (se quitan «clientes» y «medios de pago», que no estaban en el alcance ni en la EDT). El presupuesto declara que USD 27.000 es el techo de personal, con 970 h de línea base (USD 24.250) y 110 h de reserva (USD 2.750); los importes se unifican en formato USD y se corrige el título del total. Se define el rol del comerciante/usuario final. Se anidan las listas de §4. |
 
 1. ### **Datos generales**
 
@@ -53,7 +54,7 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
    5. Soportar múltiples medios de pago (efectivo, tarjeta débito/crédito, transferencia, QR, cuenta corriente) y gestión de giftcards (emisión, carga, canje, saldo).
 
-   6. Generar reportes y estadísticas (ventas, stock, rentabilidad, clientes, medios de pago) exportables.
+   6. Generar reportes y estadísticas (ventas por período, productos más vendidos, stock crítico, estado de cuentas corrientes y rentabilidad) exportables.
 
    7. Implementar usuarios y permisos con roles básicos (administrador y cajero).
 
@@ -61,35 +62,35 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
    1. #### **Incluido (in scope)**
 
-* Módulo de **Productos y Stock**: catálogo, categorías, variantes, control de inventario, ajustes de stock, alertas.
+   * Módulo de **Productos y Stock**: catálogo, categorías, variantes, control de inventario, ajustes de stock, alertas.
 
-* Módulo de **Facturación** con integración a ARCA (Factura A/B/C, notas de crédito/débito, homologación y producción).
+   * Módulo de **Facturación** con integración a ARCA (Factura A/B/C, notas de crédito/débito, homologación y producción).
 
-* Módulo de **Clientes** y **Proveedores** con datos fiscales y cuentas corrientes.
+   * Módulo de **Clientes** y **Proveedores** con datos fiscales y cuentas corrientes.
 
-* Módulo de **Pagos**: múltiples medios de pago por venta, combinación de medios (pago mixto).
+   * Módulo de **Pagos**: múltiples medios de pago por venta, combinación de medios (pago mixto).
 
-* Módulo de **Giftcards**: emisión, recarga, canje, consulta de saldo.
+   * Módulo de **Giftcards**: emisión, recarga, canje, consulta de saldo.
 
-* Módulo de **Reportes y Estadísticas**: ventas por período, productos más vendidos, stock crítico, estado de cuentas corrientes, rentabilidad.
+   * Módulo de **Reportes y Estadísticas**: ventas por período, productos más vendidos, stock crítico, estado de cuentas corrientes, rentabilidad.
 
-* Módulo de **Usuarios y permisos** (roles básicos: administrador, cajero).
+   * Módulo de **Usuarios y permisos** (roles básicos: administrador, cajero).
 
-* Diseño genérico y configurable para distintos rubros (parametrización de catálogo, sin lógica específica de un solo tipo de comercio).
+   * Diseño genérico y configurable para distintos rubros (parametrización de catálogo, sin lógica específica de un solo tipo de comercio).
 
-  2. #### **Excluido (out of scope) — para esta entrega**
+   2. #### **Excluido (out of scope) — para esta entrega**
 
-* Aplicación móvil nativa (se contempla diseño responsive web, no app store).
+   * Aplicación móvil nativa (se contempla diseño responsive web, no app store).
 
-* Integración con múltiples pasarelas de pago en producción (se implementa una simulada/sandbox).
+   * Integración con múltiples pasarelas de pago en producción (se implementa una simulada/sandbox).
 
-* Multi-sucursal / multi-empresa avanzado (franquicias, consolidación entre locales).
+   * Multi-sucursal / multi-empresa avanzado (franquicias, consolidación entre locales).
 
-* Módulo de e-commerce / venta online integrada.
+   * Módulo de e-commerce / venta online integrada.
 
-* Soporte multiidioma / multimoneda.
+   * Soporte multiidioma / multimoneda.
 
-* Integración con hardware fiscal específico (impresoras fiscales homologadas físicas) más allá de impresión estándar de comprobantes en PDF.
+   * Integración con hardware fiscal específico (impresoras fiscales homologadas físicas) más allá de impresión estándar de comprobantes en PDF.
 
 *(Este límite se detalla y puede ajustarse en el Documento de Alcance — sección control de cambios.)*
 
@@ -99,7 +100,7 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 | :---- | :---- |
 | Julio Gutierrez | Cliente |
 | Equipo del proyecto (3 integrantes) | Ejecutores: desarrollo, gestión y documentación |
-| Comerciante/usuario final (perfil hipotético representativo) | Usuario objetivo del producto; valida usabilidad y utilidad del sistema |
+| Comerciante/usuario final (perfil representativo; lo cubre un comerciante a designar por el Sponsor) | Usuario objetivo del producto; valida usabilidad y utilidad en las demostraciones de cierre de H2, H3 y H4 |
 | ARCA (organismo fiscal) | Define las reglas y Web Services con los que el sistema debe interoperar |
 | Railway (proveedor de infraestructura) | Provee el servidor sobre el que corre el sistema (costo en el presupuesto) |
 
@@ -123,25 +124,25 @@ Desarrollar un sistema de gestión comercial multirubro que permita administrar 
 
 **Costos de Infraestructura:**
 
-* Railway (Servidor): 5 dólares mensuales × 5 meses (oct/2026–feb/2027; contratación al inicio de H2, semana 7, con primer cobro en octubre) = 25 dólares.
+* Railway (Servidor): USD 5 mensuales × 5 meses (oct/2026–feb/2027; contratación al inicio de H2, semana 7, con primer cobro en octubre) = USD 25.
 
 **Costos de Personal:**
 
-* Tomás Disandro: 360 horas × 25 dólares/hora = 9.000 dólares
+* Tomás Disandro: 360 horas × USD 25/hora = USD 9.000
 
-* Juan Cruz Bulatovich: 360 horas × 25 dólares/hora = 9.000 dólares
+* Juan Cruz Bulatovich: 360 horas × USD 25/hora = USD 9.000
 
-* Jesus Manuel Martinez: 360 horas × 25 dólares/hora = 9.000 dólares
+* Jesus Manuel Martinez: 360 horas × USD 25/hora = USD 9.000
 
-*(Reparto de horas por integrante propuesto, a confirmar por el Director de Proyecto.)*
+*(El reparto de horas por integrante es una propuesta a confirmar por el Director de Proyecto; el desglose por actividad y por rol está en el documento de Estimación y Presupuesto, JJT-GPI-08.)*
 
-**Costos totales basados en las horas de trabajo:**
+**Costos totales (personal e infraestructura):**
 
-* Subtotal de personal: 1080 horas = 27000 dólares
+* Subtotal de personal: 1.080 horas = USD 27.000. Es el **techo** de personal: la estimación vigente es de 970 horas de línea base (USD 24.250, BAC) más 110 horas de reserva (USD 2.750).
 
-* Infraestructura: 25 dólares
+* Infraestructura: USD 25
 
-* **Total general: 27025 dólares**
+* **Total general: USD 27.025**
 
 9. ### **Criterios de éxito**
 

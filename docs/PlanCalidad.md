@@ -9,13 +9,14 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Código | JJT-GPI-10 |
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
-| Horizonte | 27 semanas (19/08/2026 – 21/02/2027) |
-| Fecha / Versión / Estado | 06/10/2026 · 1.1 · Borrador para revisión |
+| Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. Cada prueba (PC-xxx) se vincula a la actividad de QA que la ejecuta en la Lista v1.1 (1.5, 2.4, 3.5, 4.7, 5.4, 6.5, 7.7, 8.3). El criterio de entrada de H1 deja de afirmar que el Acta está aprobada (la aprobación está pendiente). PC-NF pasa a cubrir también RNF-10. Los documentos se versionan en el repositorio git (`docs/`), no en Drive. Se eliminan citas bibliográficas internas. |
+| 1.2 | 07/10/2026 | Se alinea el resultado del spike 2.3 con el Plan de Riesgos (R1): conexión a homologación documentada y CAE de homologación obtenido. Se registra el estado de la compuerta H1 y la entrada de H2 (certificado de testing sin confirmar, R4). Se vincula la estrategia de pruebas con los sprints S1–S8 (backlog de defectos y revisión de sprint). |
 
 > Plan de calidad y pruebas. Define cómo se asegura que el producto cumple los criterios de éxito y los requerimientos vigentes: criterios de aceptación, métricas, actividades de aseguramiento por hito, niveles de prueba, gestión de defectos, gestión de configuración y compuertas de calidad. Cada prueba referencia el requerimiento que verifica, para mantener la trazabilidad completa.
 
@@ -68,6 +69,8 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Seguridad | Ausencia de secretos en repositorio y logs; acceso por rol. | Jesus | Repositorio y logs |
 | Aceptación | Verificación de los criterios de éxito CE-1 a CE-3 con el Sponsor. | Sponsor y Director | Entorno de pruebas; dos rubros configurados |
 
+En H2 y H3 el trabajo se organiza en los sprints S1–S8 (Cronograma §2). Los defectos abiertos forman parte del backlog del sprint siguiente: cada revisión de sprint informa al equipo los defectos críticos y mayores abiertos, que se priorizan antes de nuevas funcionalidades (§6). Las pruebas funcionales de cada módulo (3.5, 4.7, 5.4, 6.5, 7.7 y 8.3) se ejecutan al cierre del hito, no al cierre de cada sprint.
+
 *Hasta que se implemente el rol administrador (8.1) los módulos operan con un usuario único provisorio de perfil administrador; las pruebas de permisos se concentran en 8.3 (PC-USR).*
 
 ## **5. Matriz de trazabilidad requerimiento → prueba**
@@ -108,10 +111,12 @@ Flujo del defecto: registrar → clasificar → asignar → corregir → verific
 
 | Hito | Criterio de entrada | Criterio de salida (compuerta) |
 | :---- | :---- | :---- |
-| H1 | Acta emitida (19/08/2026); aprobación del Sponsor pendiente de registrar. | Documentos de gestión aprobados (revisión de pares 1.5 cerrada); stack y modelo de datos definidos; modelo revisado contra dos rubros (2.4); spike con conexión a homologación documentado; criterios CE-1 a CE-3 acordados. |
+| H1 | Acta emitida (19/08/2026); aprobación del Sponsor pendiente de registrar. | Documentos de gestión aprobados (revisión de pares 1.5 cerrada); stack y modelo de datos definidos; modelo revisado contra dos rubros (2.4); spike con conexión a homologación documentada y un CAE de homologación obtenido para una factura de prueba; criterios CE-1 a CE-3 acordados. |
 | H2 | H1 aprobado; certificado de testing disponible. | PC-STK y PC-ARCA aprobadas; CAE obtenido en homologación para A/B/C y NC/ND; 0 críticos abiertos; 0 secretos en repositorio y logs. |
-| H3 | H2 aprobado; credenciales de producción configurables. | PC-CLI, PC-PAG, PC-REP y PC-USR aprobadas; regresión de H2 sin fallas; 0 críticos abiertos. |
+| H3 | H2 aprobado; mecanismo de ambiente homologación/producción configurable (4.6; no requiere credenciales reales). | PC-CLI, PC-PAG, PC-REP y PC-USR aprobadas; regresión de H2 sin fallas; 0 críticos abiertos. |
 | H4 | H3 aprobado; funcionalidad completa. | PC-E2E, PC-GEN y PC-HOM aprobadas (CE-1 a CE-3 cumplidos); regresión completa; 0 críticos y plan para los mayores; documentación de cierre entregada. |
+
+*Estado al 07/10/2026 (semana 8): H1 no tiene acta de revisión de hito ni evidencia en `docs/` de 1.5 y 2.1–2.4, y el certificado de testing exigido como entrada de H2 no está confirmado (riesgo R4). H2 está en ejecución sin cumplir la entrada ni la salida de H1: hasta documentar el cierre de H1 (o aprobar el desvío por control de cambios), esa condición se registra como incumplida (Plan de Proyecto §5, observación 9).*
 
 ## **8. Gestión de configuración y versiones**
 

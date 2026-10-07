@@ -9,13 +9,14 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Código | JJT-GPI-09 |
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
-| Horizonte | 27 semanas (19/08/2026 – 21/02/2027) |
-| Fecha / Versión / Estado | 06/10/2026 · 1.1 · Borrador para revisión |
+| Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. La reserva de 110 h se asigna por prioridad y deja de superar lo disponible: la exposición no cubierta (37,2 h) queda declarada y con tratamiento explícito. R10 se reformula como "dedicación parcial del equipo". Se corrige el nivel de R1 y R2 ("alto", no "crítico"), el disparador de R6 (alineado al semáforo del Plan de Comunicaciones), la mitigación de R3 y las referencias cruzadas. Se eliminan citas bibliográficas internas. |
+| 1.2 | 07/10/2026 | Se registra el vencimiento del disparador de R4 con su escalamiento. Se aclara el resultado exigido al spike 2.3 (CAE de homologación), alineado con Cronograma y Plan de Calidad. |
 
 > Plan de gestión de riesgos. Amplía los dos riesgos de alto nivel del Acta de Constitución y del Documento de Alcance (§5) hasta un registro completo, con análisis cualitativo (probabilidad × impacto), análisis cuantitativo (VME) y plan de respuesta, siguiendo el proceso planificar → identificar → analizar → responder → monitorear. Un riesgo se expresa como causa → evento → efecto.
 
@@ -107,10 +108,10 @@ Las escalas se calibran a este proyecto: el impacto se expresa en horas adiciona
 
 | ID | Estrategia | Acciones preventivas | Disparador | Contingencia | Reserva (h) | Residual / secundario |
 | :---- | :---- | :---- | :---- | :---- | :----: | :---- |
-| R1 | Mitigar | Spike técnico de homologación (2.3) en sem. 4–6; evaluar librerías de terceros probadas; validar WSAA/WSFEv1 antes de comprometer H2. | Spike 2.3 sin CAE de homologación al cierre de la sem. 6. | Adoptar librería/adaptador de terceros y reasignar reserva de H1/H2; replanificar H2 por control de cambios. | 24 | Residual: cambios de contrato del WS. Secundario: dependencia de una librería externa. |
+| R1 | Mitigar | Spike técnico de homologación (2.3) en sem. 4–6; evaluar librerías de terceros probadas; validar WSAA/WSFEv1 antes de comprometer H2. | Spike 2.3 sin CAE de homologación obtenido para una factura de prueba al cierre de la sem. 6 (27/09/2026). | Adoptar librería/adaptador de terceros y reasignar reserva de H1/H2; replanificar H2 por control de cambios. | 24 | Residual: cambios de contrato del WS. Secundario: dependencia de una librería externa. |
 | R2 | Evitar / mitigar | Aplicar el proceso formal de control de cambios (Alcance §7); registrar todo pedido por escrito y medir su impacto antes de aceptarlo. | Pedido que modifica un ítem incluido/excluido sin registro de cambio. | Rechazar o diferir el pedido; si es significativo, aprobación explícita del Sponsor y re-estimación. | 24 | Residual: pedidos informales fuera del circuito. |
 | R3 | Aceptar (activa) | Aislar el cliente WS tras una interfaz que permita simular respuestas; avanzar con el módulo Productos y Stock (3.0), el único de H2 sin dependencia de ARCA, durante cortes de servicio. | Más de 2 días hábiles sin respuesta del ambiente de homologación. | Trabajar contra respuestas simuladas y repetir la validación real al restablecerse el servicio. | — | Secundario: la simulación puede ocultar diferencias reales con ARCA. |
-| R4 | Mitigar | Gestionar CUIT de prueba y certificados de testing durante las sem. 1–3, antes de iniciar 2.3. | Sin certificado de testing al inicio de la sem. 4. | Escalar al Sponsor; reorganizar el spike hacia tareas de diseño y modelo de datos mientras se obtiene el certificado. | — | Residual: demora del trámite fuera del control del equipo. |
+| R4 | Mitigar | Gestionar CUIT de prueba y certificados de testing durante las sem. 1–3, antes de iniciar 2.3. | Sin certificado de testing al inicio de la sem. 4. | Escalar al Sponsor; reorganizar el spike hacia tareas de diseño y modelo de datos mientras se obtiene el certificado. **Estado al 07/10/2026:** el disparador (inicio de la semana 4, 31/08/2026) venció y en `docs/` no hay evidencia de certificado; el Director debe escalar al Sponsor y registrar el resultado y la fecha estimada de obtención. | — | Residual: demora del trámite fuera del control del equipo. |
 | R5 | Mitigar / aceptar | Documentar decisiones técnicas, trabajar en pares en 4.0 y mantener repositorio y documentación compartidos; reparto cruzado de tareas de QA (actividades de QA por módulo, Lista v1.1). | Ausencia de un integrante superior a 2 semanas. | Redistribuir actividades entre los dos integrantes restantes y proponer, vía control de cambios, el ajuste de alcance o fechas. | 20 | Residual: capacidad reducida. Secundario: sobrecarga del resto del equipo. |
 | R6 | Mitigar | Registrar horas reales por actividad cada semana y comparar con la línea base; recalibrar al cierre de H2. | SPI o CPI en rojo (< 0,85) durante 2 semanas seguidas, o consumo de reserva > 50% antes del cierre de H2. | Re-estimar el trabajo restante y proponer reasignación de reserva o ajuste de alcance. | 12 | Residual: falta de datos históricos propios. |
 | R7 | Evitar / mitigar | Variables de entorno y archivos ignorados por git (.crt, .key, .env); escaneo de secretos antes de cada integración; revisión de logs en las pruebas de 4.4 y 4.7. | Hallazgo de un secreto en el repositorio o en un log. | Revocar y regenerar certificados, reescribir el historial afectado y registrar el incidente. | — | Residual: error humano. Secundario: interrupción por rotación de certificados. |

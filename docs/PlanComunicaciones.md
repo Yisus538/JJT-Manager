@@ -9,13 +9,14 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Código | JJT-GPI-11 |
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
-| Horizonte | 27 semanas (19/08/2026 – 21/02/2027) |
-| Fecha / Versión / Estado | 06/10/2026 · 1.1 · Borrador para revisión |
+| Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. La línea base de valor planificado (PV) se recalcula con las 48 actividades de la Lista v1.1 y el calendario nivelado. El ejemplo de acción correctiva se rehace sobre la carga real del cronograma v1.1 (el anterior mezclaba actividades de H2 con H3 y proponía mover actividades sin holgura suficiente). El umbral de la acción correctiva pasa a ser coherente con la regla de ≤ 50 h/semana. Se registra la revisión de la compuerta H1 como pendiente. Se eliminan citas bibliográficas internas. |
+| 1.2 | 07/10/2026 | Se corrige la causa raíz del ejemplo de acción correctiva (semana 13: 3.5, 4.4, 4.5 y 4.7; semana 14: 3.5, 4.5, 4.6 y 4.7). El comerciante tipo se alinea con la definición del Acta v1.3. |
 
 > Plan de comunicaciones y seguimiento. Define quién informa qué, a quién, con qué frecuencia y por qué canal, y cómo se compara el avance real con la línea base de plazo y costo para detectar desvíos y actuar a tiempo. Sin datos comparables no hay seguimiento; sin decisiones, el seguimiento se convierte en informe.
 
@@ -29,7 +30,7 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | STK-02 | Tomás Disandro — Director y Backend | A | Gestionar de cerca | Todo el estado del proyecto; riesgos y decisiones pendientes |
 | STK-03 | Juan Cruz Bulatovich — Frontend | A | Gestionar de cerca | Prioridades, dependencias y cambios que afecten sus módulos |
 | STK-04 | Jesus Manuel Martinez — QA/QC | A | Gestionar de cerca | Entregables listos para prueba; criterios de aceptación; defectos |
-| STK-05 | Comerciante tipo (usuario final) | C | Mantener informado | Funcionalidad disponible y validación de usabilidad |
+| STK-05 | Comerciante tipo (usuario final; perfil representativo a designar por el Sponsor) | C | Mantener informado | Funcionalidad disponible y validación de usabilidad |
 | STK-06 | ARCA (organismo fiscal) | B | Mantener satisfecho | Se consulta su documentación y comunicados; no recibe informes del proyecto |
 | STK-07 | Railway (infraestructura) | D | Monitorear | Estado del servicio y costos (USD 5/mes) |
 
@@ -133,7 +134,7 @@ La línea base de seguimiento es el valor planificado (PV) acumulado por semana,
 | Campo | Contenido |
 | :---- | :---- |
 | Desviación | La demanda semanal planificada llega a 47,8 h en las semanas 13 y 14 frente a una capacidad de 40 h (indicador "Carga semanal" en amarillo). |
-| Causa raíz | El cierre de H2 concentra 4.4, 4.5, 4.6 y las pruebas de integración 4.7. |
+| Causa raíz | El cierre de H2 concentra, en la semana 13, 3.5, 4.4, 4.5 y las pruebas de integración 4.7, y en la semana 14, 3.5, 4.5, 4.6 y 4.7. |
 | Acción | Diseñar los casos de prueba de 4.7 durante la semana 12 (4.7 arranca en esa semana) para llegar a las semanas 13–14 solo con ejecución, y no abrir actividades nuevas en las semanas 13–14; 4.5 (11 semanas de holgura) pasa a la semana 14 si el avance real lo requiere. |
 | Responsable | Tomás Disandro, con Jesus Manuel Martinez |
 | Fecha objetivo | Antes del inicio de la semana 13 (09/11/2026) |

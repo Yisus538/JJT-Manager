@@ -22,12 +22,13 @@ Fecha	**25/08/2026** (versión 1.1: 06/10/2026)
 
 **Fecha:** 25/08/2026
 
-**Versión del documento:** 1.1 (06/10/2026)
+**Versión del documento:** 1.2 (07/10/2026)
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 25/08/2026 | Emisión inicial. |
 | 1.1 | 06/10/2026 | Se define la metodología de sprints (§3.1) y se agregan las fechas de los hitos (§3). La EDT embebida se alinea con `docs/EDT.md` v1.1: RF-28 en 8.1/8.2, RNF-04/05/09 en 4.4/4.6 y las 8 actividades de QA por módulo. El equipo (§4) refleja la participación transversal de QA en la Lista de Actividades v1.1. El H3 incluye Usuarios y permisos. Se corrigen errores de redacción. Se incorporan a §5 los riesgos R6, R10 y R11 del Plan de Riesgos. Alcance incluido/excluido: **sin cambios**. |
+| 1.2 | 07/10/2026 | El equipo (§4) refleja las horas de apoyo entre integrantes definidas en Estimación y Presupuesto v1.2 §4. Alcance incluido/excluido: **sin cambios**. |
 
 > Este documento desarrolla el **alcance de alto nivel** del Acta de Constitución en una Declaración de Alcance, una Estructura de Desglose del Trabajo (EDT), un cronograma de hitos y sprints, y el **proceso formal de control de cambios** (sección 7) al que debe someterse cualquier pedido que exceda lo aquí definido. Cada apartado cita la sección del Acta o del Documento de Requerimientos de la que se deriva.
 
@@ -152,8 +153,8 @@ Los **sprints duran 2 semanas** y se ejecutan en H2 y H3 (semanas 7 a 23): cuatr
 
 | Integrante | Rol | Frentes EDT bajo su responsabilidad principal |
 | :---- | :---- | :---- |
-| Tomás Disandro | Director de Proyecto / Backend | 1.0, 2.0, 4.0, 5.0 |
-| Juan Cruz Bulatovich | Frontend | 3.0, 6.0, 7.0, 8.0 (interfaces) |
+| Tomás Disandro | Director de Proyecto / Backend | 1.0, 2.0, 4.0, 5.0 (la interfaz de 4.5, 5.1 y 5.3 la comparte con Juan; apoya a Jesus en 9.3) |
+| Juan Cruz Bulatovich | Frontend | 3.0, 6.0, 7.0, 8.0 (interfaces); apoyo en la interfaz de 4.5, 5.1 y 5.3 y en 9.1, 9.2 y 9.4 (ajustes de interfaz, configuración de los dos rubros y demostración con el comerciante) |
 | Jesus Manuel Martinez | QA y QC | 9.0 (pruebas e integración) y actividades de QA de cada módulo: 1.5, 2.4, 3.5, 4.7, 5.4, 6.5, 7.7 y 8.3 (transversal a todos los módulos) |
 
 5. ### **Riesgos de alto nivel**

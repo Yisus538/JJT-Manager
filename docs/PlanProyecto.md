@@ -9,13 +9,14 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Código | JJT-GPI-12 |
 | Sponsor | Julio Gutierrez |
 | Director de proyecto | Tomás Disandro |
-| Horizonte | 27 semanas (19/08/2026 – 21/02/2027) |
-| Fecha / Versión / Estado | 06/10/2026 · 1.1 · Borrador para revisión |
+| Horizonte | 27 semanas (19/08/2026 – 21/02/2027; semanas contadas desde el lunes 17/08/2026) |
+| Fecha / Versión / Estado | 07/10/2026 · 1.2 · Borrador para revisión |
 
 | Versión | Fecha | Cambios |
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. El registro de documentos refleja las versiones vigentes (Acta v1.2 y documentos 02 a 12 en v1.1) y los archivos reales del repositorio. Se actualiza el estado de las 7 observaciones de consistencia de la v1.0 y se agregan las surgidas de la revisión del 06/10/2026 (§5). La matriz de trazabilidad usa los 7 objetivos específicos del Acta v1.2 y los criterios de éxito, e incorpora las actividades de QA. Se eliminan citas bibliográficas internas. |
+| 1.2 | 07/10/2026 | Registro de documentos actualizado (Acta v1.3; Lista, Cronograma, Estimación, Riesgos, Calidad y Comunicaciones v1.2). Trazabilidad: Facturación incorpora 9.3 y H4, y los objetivos 4–7 tienen riesgos asociados. Nuevas observaciones 16 a 18 (cierre de la revisión del 07/10/2026); Alcance v1.2. |
 
 > Plan de proyecto. Documento integrador que explica cómo se ejecutará, monitoreará y cerrará el proyecto. Organiza la documentación en las 12 secciones de un plan de proyecto, identifica qué documentos faltaban y los incorpora, y fija la trazabilidad completa objetivo → requerimiento → EDT → hito → riesgo → prueba. Responde: ¿qué?, ¿quién?, ¿cuándo?, ¿con qué?, ¿cuánto?, ¿qué puede salir mal? y ¿cómo sabremos que vamos bien?
 
@@ -29,7 +30,7 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | Objetivo general | Sistema de gestión comercial multirubro: stock, facturación electrónica con ARCA, clientes/proveedores y cuentas corrientes, múltiples medios de pago y giftcards, reportes. | JJT-GPI-01 |
 | Alcance | 7 módulos incluidos (RF-01 a RF-32) y 6 exclusiones explícitas (RNF-07, RF-21). | JJT-GPI-03, 04 |
 | Plazo | 27 semanas: 19/08/2026 – 21/02/2027; hitos H1 (sem. 6), H2 (sem. 15), H3 (sem. 23), H4 (sem. 27). | JJT-GPI-01, 07 |
-| Esfuerzo y costo | 970 h esperadas (rango 760–1.220 h); presupuesto 1.080 h = USD 27.000 de personal + USD 25 de infraestructura = USD 27.025. | JJT-GPI-08 |
+| Esfuerzo y costo | 970 h esperadas (rango 760–1.220 h); presupuesto techo de 1.080 h = USD 27.000 de personal (970 h de línea base + 110 h de reserva) + USD 25 de infraestructura = USD 27.025. | JJT-GPI-08 |
 | Equipo | Tomás Disandro (Director y Backend), Juan Cruz Bulatovich (Frontend), Jesus Manuel Martinez (QA/QC); Sponsor: Julio Gutierrez. | JJT-GPI-01 |
 | Metodología | Híbrida: fases predictivas para planificación (H1) y cierre (H4); desarrollo iterativo en sprints de 2 semanas entre ambas (S1–S8). | JJT-GPI-01, 04, 07 |
 | Riesgos principales | R1 (WS de ARCA) y R2 (scope creep), nivel 12; exposición total esperada USD 3.680 (147 h) frente a una reserva de USD 2.750 (110 h). | JJT-GPI-09 |
@@ -59,18 +60,18 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 
 | Código | Documento | Fecha | Versión | Estado | Ubicación |
 | :---- | :---- | :---- | :----: | :---- | :---- |
-| JJT-GPI-01 | Acta de Constitución del Proyecto | 19/08/2026 (rev. 06/10/2026) | 1.2 | Vigente · aprobación del sponsor pendiente | `docs/Acta Constitucion.md` |
+| JJT-GPI-01 | Acta de Constitución del Proyecto | 19/08/2026 (rev. 07/10/2026) | 1.3 | Vigente · aprobación del sponsor pendiente | `docs/Acta Constitucion.md` |
 | JJT-GPI-02 | Registro de Interesados | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/StakeHolders.md` |
 | JJT-GPI-03 | Documento de Requerimientos | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/Requerimientos.md` |
-| JJT-GPI-04 | Documento de Alcance y Gestión | 25/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/Alcance.md` |
+| JJT-GPI-04 | Documento de Alcance y Gestión | 25/08/2026 (rev. 07/10/2026) | 1.2 | Vigente | `docs/Alcance.md` |
 | JJT-GPI-05 | Estructura de Desglose del Trabajo (EDT) | 26/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/EDT.md` |
-| JJT-GPI-06 | Lista de Actividades | 26/08/2026 (rev. 06/10/2026) | 1.1 | Vigente | `docs/ListaActividades.md` (PDF: `docs/ListaActividades-JJT-Manager.pdf`) |
-| JJT-GPI-07 | Cronograma del Proyecto | 06/10/2026 | 1.1 | Borrador para revisión | `docs/Cronograma.md` (Gantt en PDF: `docs/Cronograma_Gantt_JJT_Manager.pdf`) |
-| JJT-GPI-08 | Estimación de Esfuerzo y Presupuesto | 06/10/2026 | 1.1 | Borrador para revisión | `docs/EstimacionPresupuesto.md` |
-| JJT-GPI-09 | Plan de Gestión de Riesgos | 06/10/2026 | 1.1 | Borrador para revisión | `docs/PlanRiesgos.md` |
-| JJT-GPI-10 | Plan de Calidad y Pruebas | 06/10/2026 | 1.1 | Borrador para revisión | `docs/PlanCalidad.md` |
-| JJT-GPI-11 | Plan de Comunicaciones y Seguimiento | 06/10/2026 | 1.1 | Borrador para revisión | `docs/PlanComunicaciones.md` |
-| JJT-GPI-12 | Plan de Proyecto (documento integrador) | 06/10/2026 | 1.1 | Borrador para revisión | `docs/PlanProyecto.md` |
+| JJT-GPI-06 | Lista de Actividades | 26/08/2026 (rev. 07/10/2026) | 1.2 | Vigente | `docs/ListaActividades.md` (PDF: `docs/ListaActividades-JJT-Manager.pdf`) |
+| JJT-GPI-07 | Cronograma del Proyecto | 07/10/2026 | 1.2 | Borrador para revisión | `docs/Cronograma.md` (Gantt en PDF: `docs/Cronograma_Gantt_JJT_Manager.pdf`) |
+| JJT-GPI-08 | Estimación de Esfuerzo y Presupuesto | 07/10/2026 | 1.2 | Borrador para revisión | `docs/EstimacionPresupuesto.md` |
+| JJT-GPI-09 | Plan de Gestión de Riesgos | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanRiesgos.md` |
+| JJT-GPI-10 | Plan de Calidad y Pruebas | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanCalidad.md` |
+| JJT-GPI-11 | Plan de Comunicaciones y Seguimiento | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanComunicaciones.md` |
+| JJT-GPI-12 | Plan de Proyecto (documento integrador) | 07/10/2026 | 1.2 | Borrador para revisión | `docs/PlanProyecto.md` |
 
 *Los códigos JJT-GPI-NN son una convención propuesta en este plan para identificar y citar cada documento; cada documento lo declara en su encabezado. Los borradores v1.0 de los documentos 07 a 12 (PDF, 05/10/2026) quedan en `docs/extras/DOCS Faltantes/` solo como referencia histórica: están reemplazados por las versiones Markdown indicadas.*
 
@@ -81,12 +82,12 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 | Objetivo / elemento del Acta v1.2 | Requerimientos | EDT | Hito | Riesgos | Pruebas |
 | :---- | :---- | :---- | :----: | :---- | :---- |
 | Obj. 1 — Modelo de datos genérico multirubro | RNF-01 a 03, RF-32 | 2.2, 2.4, 9.2 | H1, H4 | R8 | PC-GEN |
-| Obj. 2 — Facturación electrónica integrada con ARCA | RF-06 a 11, RNF-04, 05, 09 | 2.3, 4.0 | H1, H2 | R1, R3, R4, R7, R9, R12 | PC-ARCA, PC-HOM |
+| Obj. 2 — Facturación electrónica integrada con ARCA | RF-06 a 11, RNF-04, 05, 09 | 2.3, 4.0, 9.3 | H1, H2, H4 | R1, R3, R4, R7, R9, R12 | PC-ARCA, PC-HOM |
 | Obj. 3 — Control de stock | RF-01 a 05 | 3.0 | H2 | R6 | PC-STK |
-| Obj. 4 — Clientes, proveedores y cuentas corrientes | RF-12 a 14 | 5.0 | H3 | — | PC-CLI |
-| Obj. 5 — Medios de pago y giftcards | RF-15 a 21 | 6.0 | H3 | — | PC-PAG |
-| Obj. 6 — Reportes y estadísticas exportables | RF-22 a 27 | 7.0 | H3 | — | PC-REP |
-| Obj. 7 — Usuarios y permisos | RF-28 a 30 | 8.0 | H3 | — | PC-USR |
+| Obj. 4 — Clientes, proveedores y cuentas corrientes | RF-12 a 14 | 5.0 | H3 | R6, R10 | PC-CLI |
+| Obj. 5 — Medios de pago y giftcards | RF-15 a 21 | 6.0 | H3 | R6, R10 | PC-PAG |
+| Obj. 6 — Reportes y estadísticas exportables | RF-22 a 27 | 7.0 | H3 | R6, R11 | PC-REP |
+| Obj. 7 — Usuarios y permisos | RF-28 a 30 | 8.0 | H3 | R2, R11 | PC-USR |
 | Criterio de éxito 2 — Ciclo integral del sistema | RF-31 | 9.1 | H4 | R11 | PC-E2E |
 | Restricciones y alcance (equipo fijo, control de cambios, interfaz web, exclusiones) | RNF-06 a 08, 10 | 1.0, 9.4 | H1, H4 | R2, R5, R10 | PC-NF |
 
@@ -113,6 +114,9 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 | 13 | **Nueva.** Los documentos 02 a 06 no tenían código, versión ni historial de cambios, aunque el Alcance §7.4 exige incrementar la versión ante cambios. | JJT-GPI-02 a 06 | Resuelta | Todos los documentos declaran código, versión y tabla de cambios. |
 | 14 | **Nueva.** Redacción no apta para el sponsor: un supuesto del Acta sobre quién evalúa el proceso, el riesgo R10 y citas bibliográficas internas en los documentos 08 a 12. | JJT-GPI-01, 08 a 12 | Resuelta | Reformulados en los documentos vigentes (R10 pasa a «dedicación parcial del equipo»). |
 | 15 | **Nueva.** Hay dos EDT (Alcance §2 y EDT.md) con distinto nivel de detalle. | JJT-GPI-04; JJT-GPI-05 | Resuelta | El Alcance resume los paquetes y remite a EDT.md, con las mismas referencias RF/RNF. |
+| 16 | **Nueva.** El esfuerzo por rol de Estimación §4 (323/324/323 h) contradecía las horas por actividad de §3: por responsable de actividad, Jesus carga 370 h (> 360 h) y Juan 265 h. | JJT-GPI-08 §3–4 | Resuelta | Estimación v1.2 §4: 63 h de apoyo entre integrantes según su rol (interfaz de 4.5, 5.1 y 5.3, y parte de 9.1, 9.2 y 9.4 para Juan; 9.3 con apoyo de Tomás). Carga final 323/324/323 h. Lista v1.2 y Alcance v1.2 lo reflejan. |
+| 17 | **Nueva.** La gestión continua (reuniones, informes, registro de horas, SPI/CPI, revisiones de sprint) y los documentos 07–12 no tienen horas; las 60 h de 1.0 se consumen en 1.1–1.5. | JJT-GPI-08 §7; JJT-GPI-06 | Abierta | Declarado en Estimación v1.2. Falta decidir cómo financiarlo (actividad nueva con re-estimación o reserva). |
+| 18 | **Nueva.** 4.6 (credenciales de producción) bloqueaba 5.1 y 6.1.2 pese a ser opcional según el Acta; los reportes y los roles estaban encadenados en serie; el CPM colapsaba cadenas de actividades de 1 semana. | JJT-GPI-06; JJT-GPI-07 §5–6 | Resuelta | Lista v1.2 y Cronograma v1.2: nuevas precedencias, convención de CPM y duración lógica de 26 semanas. |
 
 ## **6. Aprobación**
 
