@@ -16,7 +16,7 @@ Sistema de Gestión y Facturación Ágil integrado con ARCA
 | :---- | :---- | :---- |
 | 1.0 | 05/10/2026 | Emisión inicial (borrador). |
 | 1.1 | 06/10/2026 | Pasa a formato Markdown. El registro de documentos refleja las versiones vigentes (Acta v1.2 y documentos 02 a 12 en v1.1) y los archivos reales del repositorio. Se actualiza el estado de las 7 observaciones de consistencia de la v1.0 y se agregan las surgidas de la revisión del 06/10/2026 (§5). La matriz de trazabilidad usa los 7 objetivos específicos del Acta v1.2 y los criterios de éxito, e incorpora las actividades de QA. Se eliminan citas bibliográficas internas. |
-| 1.2 | 07/10/2026 | Registro de documentos actualizado (Acta v1.3; Lista, Cronograma, Estimación, Riesgos, Calidad y Comunicaciones v1.2). Trazabilidad: Facturación incorpora 9.3 y H4, y los objetivos 4–7 tienen riesgos asociados. Nuevas observaciones 16 a 18 (cierre de la revisión del 07/10/2026); Alcance v1.2. Se registra la aprobación del Sponsor de la documentación (observación 8 resuelta) y el cierre de la actividad 1.5 con el Registro de Revisión de Pares (JJT-GPI-13). |
+| 1.2 | 07/10/2026 | Registro de documentos actualizado (Acta v1.3; Lista, Cronograma, Estimación, Riesgos, Calidad y Comunicaciones v1.2). Trazabilidad: Facturación incorpora 9.3 y H4, y los objetivos 4–7 tienen riesgos asociados. Nuevas observaciones 16 a 18 (cierre de la revisión del 07/10/2026); Alcance v1.2. Se registra la aprobación del Sponsor de la documentación (observación 8 resuelta) y el cierre de la actividad 1.5 con el Registro de Revisión de Pares (JJT-GPI-13). Se agregan los entregables de 2.1, 2.2 y 2.4 (JJT-GPI-14 a 16). |
 
 > Plan de proyecto. Documento integrador que explica cómo se ejecutará, monitoreará y cerrará el proyecto. Organiza la documentación en las 12 secciones de un plan de proyecto, identifica qué documentos faltaban y los incorpora, y fija la trazabilidad completa objetivo → requerimiento → EDT → hito → riesgo → prueba. Responde: ¿qué?, ¿quién?, ¿cuándo?, ¿con qué?, ¿cuánto?, ¿qué puede salir mal? y ¿cómo sabremos que vamos bien?
 
@@ -56,7 +56,7 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 
 ## **3. Registro de documentos**
 
-*13 documentos · todos en formato Markdown en `docs/`.*
+*16 documentos · todos en formato Markdown en `docs/`.*
 
 | Código | Documento | Fecha | Versión | Estado | Ubicación |
 | :---- | :---- | :---- | :----: | :---- | :---- |
@@ -73,6 +73,9 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 | JJT-GPI-11 | Plan de Comunicaciones y Seguimiento | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/PlanComunicaciones.md` |
 | JJT-GPI-12 | Plan de Proyecto (documento integrador) | 07/10/2026 | 1.2 | Aprobado por el Sponsor | `docs/PlanProyecto.md` |
 | JJT-GPI-13 | Registro de Revisión de Pares (actividad 1.5) | 07/10/2026 | 1.0 | Completada · aprobada por el Sponsor | `docs/RevisionPares.md` |
+| JJT-GPI-14 | Definición del Stack Tecnológico (actividad 2.1) | 07/10/2026 | 1.0 | Aprobado por el equipo | `docs/StackTecnologico.md` |
+| JJT-GPI-15 | Modelo de Datos Genérico Multirubro (actividad 2.2) | 07/10/2026 | 1.1 | Aprobado por el equipo | `docs/ModeloDatos.md` |
+| JJT-GPI-16 | Revisión del Modelo de Datos contra Dos Rubros (actividad 2.4) | 07/10/2026 | 1.0 | Completada · aprobada por el equipo | `docs/RevisionModeloDatos.md` |
 
 *Los códigos JJT-GPI-NN son una convención propuesta en este plan para identificar y citar cada documento; cada documento lo declara en su encabezado. Los borradores v1.0 de los documentos 07 a 12 (PDF, 05/10/2026) quedan en `docs/extras/DOCS Faltantes/` solo como referencia histórica: están reemplazados por las versiones Markdown indicadas.*
 
@@ -108,7 +111,7 @@ Además de las 12 secciones, el seguimiento y control del plan estaba sin docume
 | 6 | Carga semanal por encima de 40 h (pico de 83 h) y H2 al 101%. | JJT-GPI-07 §6; JJT-GPI-08 §5 | Mitigada | Calendario nivelado en Cronograma v1.1: pico de 47,8 h y 10 semanas entre 40 y 50 h. La demanda de H2 (365 h) sigue superando en 5 h su capacidad: se cubre con la reserva (decisión del Sponsor si se consume). |
 | 7 | El presupuesto de USD 27.000 del Acta cubría solo personal. | JJT-GPI-01; JJT-GPI-08 §6 | Resuelta | Acta v1.1 declara ambos rubros (USD 27.025). |
 | 8 | **Nueva.** Los documentos se citan como «aprobados» pero ninguna aprobación estaba registrada (Acta, secciones de aprobación vacías; v1.1/v1.2 modifica fecha y presupuesto). | JJT-GPI-01 §12; JJT-GPI-07; JJT-GPI-10 | Resuelta | El Sponsor aprobó el Acta (incluidos los cambios de fecha y presupuesto) y los documentos de gestión, confirmado por el equipo el 07/10/2026. Queda registrar firma y fecha de cada persona en las tablas de aprobación. |
-| 9 | **Nueva.** La compuerta H1 (semana 6, 27/09/2026) ya venció y no hay en `docs/` evidencia de 2.1, 2.2, 2.3 y 2.4 ni acta de revisión de hito. La actividad 1.5 se cerró el 07/10/2026 (JJT-GPI-13). | JJT-GPI-07 §7; JJT-GPI-10 §7; JJT-GPI-13 | Abierta | Confirmar el estado real de 2.1–2.4 y documentarlo (o replanificar por control de cambios); realizar la revisión de H1. |
+| 9 | **Nueva.** La compuerta H1 (semana 6, 27/09/2026) venció sin acta de revisión de hito. Al 07/10/2026 están cerradas 1.5 (JJT-GPI-13), 2.1 (JJT-GPI-14), 2.2 (JJT-GPI-15) y 2.4 (JJT-GPI-16), todas fuera de plazo. Falta el spike 2.3 (conexión a homologación y CAE de una factura de prueba). | JJT-GPI-07 §7; JJT-GPI-10 §7 | Abierta | Ejecutar el spike 2.3 con la CUIT de prueba (R4 confirmado) y, con su resultado, realizar la revisión de H1 con acta. |
 | 10 | **Nueva.** La exposición esperada de riesgos (147,2 h) supera la reserva (110 h) por 37,2 h, y la reserva coincide con la holgura de capacidad. | JJT-GPI-09 §4; JJT-GPI-08 §5 | Gestionada | Reserva asignada por prioridad (R1, R2, R5, R11, R10, R6); R7, R8, R3, R4 y R9 sin reserva, con escalamiento al Sponsor si se materializan. |
 | 11 | **Nueva.** Dependencias lógicas invertidas en 6.0 (QR antes de la pasarela; cuenta corriente antes de 5.2) y precedencia 3.4 → 5.1 sin justificación. | JJT-GPI-06 | Resuelta | Lista v1.1: 6.4 antecede a 6.1.3, 6.1.1 sigue a 5.2, se elimina 3.4 → 5.1. |
 | 12 | **Nueva.** El Documento de Alcance §5 listaba solo R1 y R2, mientras el Plan de Riesgos agrega R3 a R12. | JJT-GPI-04 §5; JJT-GPI-09 | Resuelta | Alcance v1.1 incorpora R6, R10 y R11 y remite al Plan de Riesgos para el registro completo (R1 a R12). |
